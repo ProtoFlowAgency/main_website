@@ -14,8 +14,8 @@
             <div class="footer-logo">
               <a href="/"
                 ><img
-                  src="/assets/svgs/logo-white.svg"
-                  alt="north melbourne weblogo"
+                  src="/assets/images/logo-white.png"
+                  alt="{{ client.name }} Logo"
               /></a>
             </div>
           </div>
@@ -27,12 +27,12 @@
           #}
           <ul class="social-list list-2">
             <li class="facebook">
-              <a href="https://www.facebook.com/northmelbourneweb/">
+              <a href="{{ client.socials.facebook }}">
                 <i class="fab fa-facebook-f"></i>
               </a>
             </li>
             <li class="pinterest">
-              <a href="https://www.linkedin.com/company/north-melourne-web/">
+              <a href="{{ client.socials.linkedin }}">
                 <i class="fab fa-linkedin-in"></i>
               </a>
             </li>
@@ -78,16 +78,16 @@
           </div>
           <ul class="address-list">
             <li>
-              <a href="mailto:design@northmelbourneweb.com"
-                >design@northmelbourneweb.com</a
+              <a href="mailto:{{ client.email }}"
+                >{{ client.email }}</a
               >
             </li>
             <li>
-              <a href="tel:+61486010043">+61 (0) 486 010 043</a>
+              <a href="tel:+61486010043"> {{ client.phoneFormatted }} </a>
             </li>
             <li>
-              Kingsway Dr, Lalor VIC <br />
-              Melbourne, Australia
+              {{ client.address.lineOne }}, {{ client.address.lineTwo }}, {{ client.address.city }}, {{ client.address.state }}, {{ client.address.zip }} <br />
+              {{ client.address.city }}, {{ client.address.state }}, {{ client.address.zip }}
             </li>
           </ul>
         </div>
@@ -129,9 +129,9 @@
         <div class="col-lg-6 col-md-12">
           <p class="mb-0">
             <a href="/copyright"
-              >© 2024 North Melbourne Web. All Rights Reserved.</a
+              >© 2025 {{ client.name }}. All Rights Reserved.</a
             >
-            <span style="color: #fff">ABN: 50 680 449 870</span>
+            <span style="color: #fff">ABN: 34 681 784 252</span>
           </p>
         </div>
         <div class="col-lg-6 col-md-12">

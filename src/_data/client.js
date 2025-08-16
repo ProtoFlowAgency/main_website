@@ -1,14 +1,14 @@
 module.exports = {
-    "name": "North Melbourne Web",
-    "email": "design@northmelbourneweb.com",
+    "name": "ProtoFlow",
+    "email": "alan@prototyflow.com.au",
     "phoneForTel": "0486-010-043",
     "phoneFormatted": "+61 (0) 486 010 043",
     "address": {
-        "lineOne": "",
-        "lineTwo": "",
-        "city": "Lalor",
+        "lineOne": "Level 22",
+        "lineTwo": "120 Spencer St",
+        "city": "Melbourne",
         "state": "VIC",
-        "zip": "3075",
+        "zip": "3000",
         "mapLink": ""
     },
     "socials": {
@@ -16,5 +16,5 @@ module.exports = {
         "instagram": "https://www.instagram.com/",
     },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
-    "domain": "https://northmelbourneweb.com"
+    "domain": "https://prototyflow.com.au"
 };
