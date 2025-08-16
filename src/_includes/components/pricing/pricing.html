@@ -1,4 +1,4 @@
-<section class="pricing-section pt-130 pb-130">
+<section id="pricing" class="pricing-section pt-130 pb-130">
   <div class="container">
     <div class="section-heading heading-3 text-center">
       <h4 class="sub-heading" data-text-animation="fade-in" data-duration="1.5">
@@ -14,7 +14,7 @@
       </h2>
     </div>
     <div class="pricing-tab wow fade-in-bottom" data-wow-delay="500ms">
-      <nav class="nav-wrap">
+      {#<nav class="nav-wrap">
         <div class="nav nav-tabs" id="nav-tab" role="tablist">
           <button
             class="nav-link active"
@@ -41,7 +41,7 @@
             One-Off Payment
           </button>
         </div>
-      </nav>
+      </nav>#}
       <div class="tab-content" id="nav-tabContent">
         <div
           class="tab-pane fade show active"
@@ -54,52 +54,10 @@
             <div class="col-lg-4 col-md-6">
               <div class="pricing-item">
                 <h4 class="plan">{{ plan.plan }}</h4>
-                <h2 class="price">{{ plan.price }} <span>/mo</span></h2>
+                <h2 class="price">{{ plan.price }}</h2>
                 <span>{{ plan.description }}</span>
-                <div class="pricing-btn-wrap">
-                  <a href="/contact" class="rr-primary-btn pricing-btn"
-                    >Get in Touch
-                    <i class="fa-sharp fa-regular fa-arrow-right"></i>
-                  </a>
-                  <a href="/pricing" class="rr-primary-btn pricing-btn"
-                    >View Details
-                    <i class="fa-sharp fa-regular fa-arrow-right"></i>
-                  </a>
-                </div>
-                <h3 class="feature">Features:</h3>
-                <p>
-                  {% for feature in plan.features %} &middot; {{ feature }}<br />
-                  {% endfor %}
-                </p>
-              </div>
-            </div>
-            {% endfor %}
-          </div>
-        </div>
-        <div
-          class="tab-pane fade"
-          id="nav-profile"
-          role="tabpanel"
-          aria-labelledby="nav-profile-tab"
-        >
-          <div class="row gy-lg-0 gy-4 justify-content-center">
-            {% for plan in pricing.oneOff %}
-            <div class="col-lg-4 col-md-6">
-              <div class="pricing-item">
-                <h4 class="plan">{{ plan.plan }}</h4>
-                <h2 class="price">{# <span>From </span> #}{{ plan.price }}</h2>
-                <span>{{ plan.description }}</span>
-                <div class="pricing-btn-wrap">
-                  <a href="/contact" class="rr-primary-btn pricing-btn"
-                    >Get in Touch
-                    <i class="fa-sharp fa-regular fa-arrow-right"></i>
-                  </a>
-                  <a href="/pricing" class="rr-primary-btn pricing-btn"
-                    >View Details
-                    <i class="fa-sharp fa-regular fa-arrow-right"></i>
-                  </a>
-                </div>
-                <h3 class="feature">Features:</h3>
+                
+                <h3 class="feature"><br>Features:</h3>
                 <p>
                   {% for feature in plan.features %} &middot; {{ feature }}<br />
                   {% endfor %}

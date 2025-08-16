@@ -9704,7 +9704,7 @@ START: Cta CSS
   margin-bottom: 25px;
 }
 .pricing-item .price {
-  font-size: 60px;
+  font-size: 30px;
   font-weight: 700;
   line-height: 1;
   margin-bottom: 15px;
@@ -12883,7 +12883,7 @@ START: Theme Slider CSS
 }
 @media only screen and (max-width: 992px) {
   .nmw-slider-2 .slider-item .slider-content {
-    margin-top: 60px;
+    margin-top: 50px;
     margin-left: 0;
   }
 }
