@@ -1,0 +1,67 @@
+backend:
+    name: git-gateway
+    branch: main
+
+local_backend: true
+logo_url: https://alan-huynh.is-a.dev/assets/images/Logo.jpeg
+
+media_folder: "src/assets/images/blog"
+public_folder: "/assets/images/blog"
+
+collections:
+    - name: "blog"
+      label: "Blog"
+      folder: "src/content/blog"
+      create: true
+      slug: "{{slug}}"
+      fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - {
+                label: "URL Slug",
+                name: "url",
+                widget: "string",
+                hint: 'Specify where the page will be written to. If you use "Blog Post", the post will be accessible from "blog/blog-post"',
+            }
+          - { label: "Description", name: "description", widget: "string" }
+          - { label: "Author", name: "author", widget: "string" }
+          - { label: "Date", name: "date", widget: "datetime" }
+          - { label: "Featured Image", name: "image", widget: "image" }
+          - { label: "Image Caption", name: "imageAlt", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Tags", name: "tags", widget: "list" }
+          
+    - name: "project"
+      label: "Project"
+      folder: "src/content/project"
+      create: true
+      slug: "{{slug}}"
+      fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - {
+                label: "URL Slug",
+                name: "url",
+                widget: "string",
+                hint: 'Specify where the page will be written to. If you use "Blog Post", the post will be accessible from "blog/blog-post"',
+            }
+          - { label: "Description", name: "description", widget: "string" }
+          - { label: "Author", name: "author", widget: "string" }
+          - { label: "Date", name: "date", widget: "datetime" }
+          - { label: "Featured Image", name: "image", widget: "image" }
+          - { label: "Image Caption", name: "imageAlt", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Tags", name: "tags", widget: "list" }
+
+    - name: "song"
+      label: "Song"
+      folder: "src/content/song"
+      create: true
+      slug: "{{slug}}"
+      fields:
+          - { label: "Song Title", name: "title", widget: "string" }
+          - { label: "Artist", name: "artist", widget: "string" }
+          - { label: "Album", name: "album", widget: "string" }
+          - { label: "Date", name: "date", widget: "datetime" }
+          - { label: "Featured Image", name: "image", widget: "image" }
+          - { label: "Release Date", name: "releaseDate", widget: "datetime" }
+          - { label: "Song Lyrics", name: "lyrics", widget: "markdown" }
+        

@@ -1,0 +1,104 @@
+/*-- -------------------------- -->
+<---           Footer           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #footer {
+        /* 40px - 100px top and bottom */
+        // padding: clamp(2.5rem, 7.9vw, 6.25rem) 0;
+        /* 40px - 50px */
+        padding-bottom: clamp(1rem, 3vw, 2rem);
+
+        .container {
+            width: 100%;
+            // max-width: calc(1280 / 16 * 1rem);
+            margin: auto;
+        }
+
+        .ul {
+            /* 40px - 60px*/
+            padding: clamp(2.5rem, 4.7vw, 3.75rem) 0;
+            margin: auto;
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+        }
+
+        .li {
+            list-style: none;
+            text-align: center;
+            margin-bottom: calc(20 / 16 * 1rem);
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+
+        .link {
+            /* 16px - 20px */
+            font-size: clamp(1rem, 1.55vw, 1.25rem);
+            line-height: 1.5em;
+            text-decoration: none;
+            font-weight: 200;
+            color: var(--bodyTextColor);
+            position: relative;
+            transition: box-shadow 0.3s;
+
+            &:hover {
+                box-shadow: inset 0 -6px var(--emphasis);
+            }
+        }
+
+        .copyright {
+            /* 14px - 16px */
+            font-size: clamp(0.875rem, 1.6vw, 1rem);
+            text-align: center;
+            color: var(--bodyTextColor);
+            display: block;
+            /* 20px - 28px */
+            margin: clamp(1.25rem, 2.8vw, 1.75rem) auto 0;
+        }
+    }
+}
+
+/* Tablet - 600px */
+@media only screen and (min-width: 37.5rem) {
+    #footer {
+        .ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .li {
+            /* 44px - 88px */
+            margin: 0 clamp(2.75rem, 6.2vw, 5.5rem) 0 0;
+            &:last-of-type {
+                margin: 0;
+            }
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #footer {
+            background-color: rgba(0, 0, 0, 0.2);
+            .link {
+                color: #fff;
+                &:hover {
+                    box-shadow: inset 0 -6px var(--emphasis-dark);
+                }
+            }
+            .ul {
+                border-top: 1px solid #fff;
+                border-bottom: 1px solid #fff;
+            }
+            .copyright {
+                color: #fff;
+            }
+        }
+    }
+}
+
+                                
