@@ -194,7 +194,7 @@ START: Theme Slider CSS
             opacity: 0.72;
         }
         .slider-content{
-            margin-top: 180px;
+            margin-top: 210px;
             max-width: 660px;
             width: 100%;
             @include breakpoint(xxxl){
@@ -204,7 +204,7 @@ START: Theme Slider CSS
                 margin-left: 200px;
             }
             @include breakpoint(md){
-                margin-top: 0;
+                margin-top: 60px;
                 margin-left: 0;
             }
             .section-heading{

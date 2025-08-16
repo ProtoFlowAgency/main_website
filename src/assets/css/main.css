@@ -3599,7 +3599,7 @@ START: Header CSS
 }
 @media only screen and (max-width: 992px) {
   .header-6 .primary-header .primary-header-inner {
-    padding: 20px 0;
+    padding: 0px 0;
   }
 }
 .header-6 .primary-header .primary-header-inner .header-menu-wrap {
@@ -12867,7 +12867,7 @@ START: Theme Slider CSS
   opacity: 0.72;
 }
 .nmw-slider-2 .slider-item .slider-content {
-  margin-top: 180px;
+  margin-top: 210px;
   max-width: 660px;
   width: 100%;
 }
@@ -12883,7 +12883,7 @@ START: Theme Slider CSS
 }
 @media only screen and (max-width: 992px) {
   .nmw-slider-2 .slider-item .slider-content {
-    margin-top: 0;
+    margin-top: 60px;
     margin-left: 0;
   }
 }
