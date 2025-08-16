@@ -15,7 +15,7 @@
           data-split="word"
           data-duration="1"
         >
-          our recent project gallery
+          Our Recent Works
         </h2>
       </div>
       <div
@@ -37,23 +37,23 @@
       <div class="col-lg-8">
         <div class="project-carousel swiper">
           <div class="swiper-wrapper">
-            {% for project in projects %}
+            {% for project in portfolio %}
             <div class="swiper-slide">
               <div class="project-box">
                 <div class="project-thumb">
                   <div class="shape"></div>
                   <img
-                    src="{{ project.imageUrl }}"
-                    alt="north melbourne web project"
+                    src="{{ project.image }}"
+                    alt="{{ project.imageAlt }}"
                   />
                 </div>
-                <a href="{{ project.detailsUrl }}" class="project-btn">
+                <a href="{{ project.url | url }}" class="project-btn">
                   <i class="fa-light fa-arrow-right-long"></i>
                 </a>
                 <div class="project-content">
-                  <span>{{ project.category }}</span>
+                  <span>{{ project.category[0] }}</span>
                   <h3 class="title">
-                    <a href="{{ project.detailsUrl }}">{{ project.title }}</a>
+                    <a href="{{ project.url | url }}">{{ project.title }}</a>
                   </h3>
                 </div>
               </div>
