@@ -1,0 +1,964 @@
+<!-- A fully fleshed-out <head>, dynamically changing based on client.json and the page front matter -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Standard meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Learn why North Melbourne Web is the trusted choice for Melbourne’s small businesses. We specialize in custom websites with 24/7 support to help your business grow online." />
+    <meta name="keywords" content="" />
+    <link rel="canonical" href="https://northmelbourneweb.com/about/" />
+
+    <!--Social Media Display-->
+    <meta property="og:title" content="About Us | Custom Web Design for Melbourne Small Businesses" />
+    <meta property="og:description" content="Learn why North Melbourne Web is the trusted choice for Melbourne’s small businesses. We specialize in custom websites with 24/7 support to help your business grow online." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://northmelbourneweb.com/about/" />
+    <meta property="og:image" content="/assets/images/logo-small.png" />
+    <meta
+      property="og:image:secure_url"
+      content="/assets/images/logo-small.png"
+    />
+
+    <!--Favicons-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicons/favicon-32x32.png?v1"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Preloads -->
+    <link rel="preload" as="image" href="/assets/svgs/logo-white.svg" />
+
+    <!-- Preload an image - tag not rendered if preloadImg is blank to stop console errors -->
+    
+    <link rel="preload" as="image" href="/assets/images/banner/about-banner.jpg" />
+     
+
+    <title>About Us | Custom Web Design for Melbourne Small Businesses</title>
+
+    <!-- Sitewide Stylesheets and Scripts -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="/assets/css/venobox.min.css" />
+    <link rel="stylesheet" href="/assets/css/animate.min.css" />
+    <link rel="stylesheet" href="/assets/css/keyframe-animation.css" />
+    <link rel="stylesheet" href="/assets/css/odometer.min.css" />
+    <link rel="stylesheet" href="/assets/css/nice-select.css" />
+    <link rel="stylesheet" href="/assets/css/carouselTicker.css" />
+    <link rel="stylesheet" href="/assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+  </head>
+  <body>
+    <!--Screen reader skip main nav-->
+    <a class="skip" aria-label="skip to main content" href="#main" tabindex="1"
+      >Click To Skip To Main Content</a
+    >
+
+    <!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header class="header header-6 sticky-active">
+  <div class="bg-shape"></div>
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-inner">
+        <ul class="top-bar-list">
+          <li>
+            <i class="fa-sharp fa-solid fa-phone"></i>
+            <a href="tel:+61486010043">+61 (0) 486 010 043</a>
+          </li>
+          <li>
+            <i class="fa-sharp fa-solid fa-location-dot"></i>Kingsway Dr, Lalor
+            VIC
+          </li>
+          <li>
+            <i class="fa-sharp fa-regular fa-envelope"></i>
+            <a href="mailto:design@northmelbourneweb.com"
+              >design@northmelbourneweb.com</a
+            >
+          </li>
+        </ul>
+        <div class="top-bar-right">
+          <div class="top-bar-social">
+            <span>Follow Us On: </span>
+            <ul class="social-list">
+              <li>
+                <a href="https://www.facebook.com/northmelbourneweb/">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/company/north-melourne-web/">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="primary-header">
+    <div class="container">
+      <div class="primary-header-inner">
+        <div class="header-logo">
+          <a href="/">
+            <img
+              class="logo-dark"
+              src="/assets/svgs/logo-white.svg"
+              alt="North Melbourne Web Logo"
+            />
+            <img
+              class="logo-light"
+              src="/assets/svgs/logo-white.svg"
+              alt="North Melbourne Web Logo"
+            />
+          </a>
+        </div>
+        <div class="header-menu-wrap">
+          <div class="mobile-menu-items">
+            <ul>
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li class="menu-item-has-children">
+                <a href="/about">About</a>
+                <ul>
+                  <li>
+                    <a href="/about">Why Us?</a>
+                  </li>
+                  <li>
+                    <a href="/portfolio">Portfolio</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item-has-children">
+                <a href="/services">Services</a>
+                <ul>
+                  <li>
+                    <a href="/web-development">Web Development</a>
+                  </li>
+                  <li>
+                    <a href="/web-design">Web Design</a>
+                  </li>
+                  <li>
+                    <a href="/seo-optimization">SEO Optimization</a>
+                  </li>
+                  <li>
+                    <a href="/logos-and-branding">Logos & Branding</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="/blog">Blog</a>
+              </li>
+              <li>
+                <a href="/pricing">Pricing</a>
+              </li>
+              <li>
+                <a href="/contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- /.header-menu-wrap -->
+        <div class="header-right-wrap">
+          <div class="header-right">
+            <div class="header-btn-wrap">
+              <a href="/contact" class="rr-primary-btn"
+                >Get in touch <i class="fa-sharp fa-regular fa-arrow-right"></i>
+              </a>
+            </div>
+            <div class="sidebar-icon">
+              <button class="sidebar-trigger open">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+          </div>
+          <!-- /.header-right -->
+        </div>
+      </div>
+      <!-- /.primary-header-inner -->
+    </div>
+  </div>
+</header>
+<!-- /.Main Header -->
+
+<div id="popup-search-box">
+  <div class="box-inner-wrap d-flex align-items-center">
+    <form id="form" action="#" method="get" role="search">
+      <input
+        id="popup-search"
+        type="text"
+        name="s"
+        placeholder="Type keywords here..."
+      />
+    </form>
+    <div class="search-close">
+      <i class="fa-sharp fa-regular fa-xmark"></i>
+    </div>
+  </div>
+</div>
+<!-- /#popup-search-box -->
+
+<div class="mobile-side-menu">
+  <div class="side-menu-content">
+    <div class="side-menu-head">
+      <a href="/"
+        ><img src="/assets/svgs/logo-white.svg" alt="north melbourne web logo"
+      /></a>
+      <button class="mobile-side-menu-close">
+        <i class="fa-regular fa-xmark"></i>
+      </button>
+    </div>
+    <div class="side-menu-wrap"></div>
+    <ul class="side-menu-list">
+      <li>
+        <i class="fa-light fa-location-dot"></i>Address :
+        <span>Kingsway Dr, Lalor VIC</span>
+      </li>
+      <li>
+        <i class="fa-light fa-phone"></i>Phone :
+        <a href="tel:+61486010043">+61 (0) 486 010 043</a>
+      </li>
+      <li>
+        <i class="fa-light fa-envelope"></i>Email :
+        <a href="mailto:design@northmelbourneweb.com"
+          >design@northmelbourneweb.com</a
+        >
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- /.mobile-side-menu -->
+<div class="mobile-side-menu-overlay"></div>
+
+<div id="sidebar-area" class="sidebar-area">
+  <button class="sidebar-trigger close">
+    <svg
+      class="sidebar-close"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      x="0px"
+      y="0px"
+      width="16px"
+      height="12.7px"
+      viewBox="0 0 16 12.7"
+      style="enable-background: new 0 0 16 12.7"
+      xml:space="preserve"
+    >
+      <g>
+        <rect
+          x="0"
+          y="5.4"
+          transform="matrix(0.7071 -0.7071 0.7071 0.7071 -2.1569 7.5208)"
+          width="16"
+          height="2"
+        ></rect>
+        <rect
+          x="0"
+          y="5.4"
+          transform="matrix(0.7071 0.7071 -0.7071 0.7071 6.8431 -3.7929)"
+          width="16"
+          height="2"
+        ></rect>
+      </g>
+    </svg>
+  </button>
+  <div class="side-menu-content">
+    <div class="side-menu-logo">
+      <a class="dark-img" href="/"
+        ><img src="/assets/svgs/logo-white.svg" alt="north melbourne web logo"
+      /></a>
+      <a class="light-img" href="/"
+        ><img src="/assets/svgs/logo-black.svg" alt="north melbourne web logo"
+      /></a>
+    </div>
+    <div class="side-menu-wrap"></div>
+    <div class="side-menu-about">
+      <div class="side-menu-header">
+        <h3>About Us</h3>
+      </div>
+      <p>
+        Professional Web Design & Development for Small Businesses Get a custom,
+        hand-coded website starting at just A$199/month. No page builders or
+        WordPress - just clean, professional design.
+      </p>
+      <a href="/contact" class="rr-primary-btn">Contact Us</a>
+    </div>
+    <div class="side-menu-contact">
+      <div class="side-menu-header">
+        <h3>Contact Us</h3>
+      </div>
+      <ul class="side-menu-list">
+        <li>
+          <i class="fas fa-map-marker-alt"></i>
+          <p>Kingsway Dr, Lalor VIC</p>
+        </li>
+        <li>
+          <i class="fas fa-phone"></i>
+          <a href="tel:+61486010043">+61 (0) 486 010 043</a>
+        </li>
+        <li>
+          <i class="fas fa-envelope-open-text"></i>
+          <a href="mailto:design@northmelbourneweb.com"
+            >design@northmelbourneweb.com</a
+          >
+        </li>
+      </ul>
+    </div>
+    <ul class="side-menu-social">
+      <li>
+        <a href="https://www.facebook.com/northmelbourneweb/">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/company/north-melourne-web/">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<!--/.sidebar-area-->
+
+    <main id="main">
+      <div id="smooth-warpper">
+        <div id="smooth-content">
+           <section
+  class="page-header"
+  data-background="/assets/images/banner/about-banner.jpg"
+>
+  <div class="overlay"></div>
+  <div class="shapes">
+    <div class="shape shape-1">
+      <img
+        src="/assets/images/shapes/page-header-shape-1.png"
+        alt="web design shape"
+      />
+    </div>
+    <div class="shape shape-2">
+      <img
+        src="/assets/images/shapes/page-header-shape-2.png"
+        alt="web design shape"
+      />
+    </div>
+    <div class="shape shape-3">
+      <img
+        src="/assets/images/shapes/page-header-shape-3.png"
+        alt="web design shape"
+      />
+    </div>
+  </div>
+  <div class="container">
+    <div class="page-header-content text-center">
+      <h1 class="title">About Our Company</h1>
+      <h4 class="sub-title">
+        <a class="home" href="/">Home </a><span></span
+        ><a class="inner-page" href="about.html"> About Us</a>
+      </h4>
+    </div>
+  </div>
+</section>
+<!-- ./ page-header -->
+ <section class="about-section-2 pt-130 pb-130">
+  <div class="container">
+    <div class="row about-wrap-2 gy-lg-0 gy-4 align-items-center">
+      <div class="col-lg-5 col-md-12">
+        <div class="about-img-box">
+          <div class="shapes">
+            <img
+              class="shape shape-1"
+              src="/assets/images/shapes/about-shape-1.png"
+              alt="about north melbourne web"
+/>
+            <img
+              class="shape shape-2"
+              src="/assets/images/shapes/about-shape-2.png"
+              alt="about north melbourne web"
+/>
+          </div>
+          <div class="img-1 reveal">
+            <img
+              src="/assets/images/images/front-intro2.jpg"
+              alt="about north melbourne web"
+/>
+          </div>
+          <div class="img-2 reveal">
+            <img
+              src="/assets/images/images/front-intro1.jpg"
+              alt="about north melbourne web"
+/>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7 col-md-12">
+        <div class="about-content-2">
+          <div class="section-heading">
+            <h4
+              class="sub-heading after-none"
+              data-text-animation="fade-in"
+              data-duration="1.5"
+            >
+              About North Mlebourne Web
+            </h4>
+            <h2
+              class="section-title"
+              data-text-animation
+              data-split="word"
+              data-duration="1"
+            >
+              We transform your online presence into a powerful customer magnet.
+            </h2>
+            <p>
+              North Melbourne Web is your trusted partner for small business web
+              development in Melbourne. We specialize in creating custom,
+              high-performance websites that drive growth and success for
+              Australian SMBs.
+            </p>
+          </div>
+          <div class="about-items">
+            <div class="about-item">
+              <div class="icon">
+                <img src="/assets/images/icon/about-1.png" alt="icon"/>
+              </div>
+              <div class="content">
+                <h4 class="title">Innovative <br/>Web Solutions</h4>
+              </div>
+            </div>
+            <div class="about-item">
+              <div class="icon">
+                <img src="/assets/images/icon/about-2.png" alt="icon"/>
+              </div>
+              <div class="content">
+                <h4 class="title">Melbourne's Local <br/>Web Experts</h4>
+              </div>
+            </div>
+          </div>
+          <a href="/contact" class="rr-primary-btn"
+            >Get Started Now <i class="fa-sharp fa-regular fa-arrow-right"></i
+          >
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ./ about-section -->
+<section class="process-section-2 fade-wrapper pb-130">
+  <div class="container">
+    <div class="section-heading text-center">
+      <span class="bg-text">Studio</span>
+      <h4 class="sub-heading" data-text-animation="fade-in" data-duration="1.5">
+        Our Work Process
+      </h4>
+      <h2
+        class="section-title"
+        data-text-animation
+        data-split="word"
+        data-duration="1"
+      >
+        Quality Service For Growth <br />Your Digital Success
+      </h2>
+    </div>
+    <div class="row gy-lg-0 gy-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="process-box fade-top">
+          <span class="number">01</span>
+          <h3 class="title">Discover</h3>
+          <p>
+            Understanding your unique business needs, goals, and challenges.
+          </p>
+          <a href="about.html" class="read-more"
+            >Read More<i class="fa-sharp fa-regular fa-chevrons-right"></i
+          ></a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="process-box fade-top">
+          <span class="number">02</span>
+          <h3 class="title">Design</h3>
+          <p>
+            Creating a custom website design that reflects your brand and
+            appeals to your target audience.
+          </p>
+          <a href="about.html" class="read-more"
+            >Read More<i class="fa-sharp fa-regular fa-chevrons-right"></i
+          ></a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="process-box fade-top">
+          <span class="number">03</span>
+          <h3 class="title">Develop</h3>
+          <p>
+            Custom-coded a fully functional and responsive website using the
+            latest technologies and best practices.
+          </p>
+          <a href="about.html" class="read-more"
+            >Read More<i class="fa-sharp fa-regular fa-chevrons-right"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ./ process-section-2 -->
+ <div class="running-text running-3">
+  <div
+    class="bg-img"
+    data-background="/assets/images/front/running-text.jpg"
+  ></div>
+  <div class="carouselTicker carouselTicker-nav" data-speed="normal">
+    <ul class="text-anim carouselTicker__list scroller__inner inner-3">
+      <div class="running-text running-3">
+        <div
+          class="bg-img"
+          data-background="/assets/images/front/running-text.jpg"
+        ></div>
+        <div class="carouselTicker carouselTicker-nav" data-speed="fast">
+          <ul class="text-anim carouselTicker__list scroller__inner inner-3">
+            
+            <li>Latest Projects</li>
+            <li class="stroke-text">Web Development</li>
+            
+            <li>Latest Projects</li>
+            <li class="stroke-text">Web Development</li>
+            
+            <li>Latest Projects</li>
+            <li class="stroke-text">Web Development</li>
+            
+            <li>Latest Projects</li>
+            <li class="stroke-text">Web Development</li>
+            
+          </ul>
+        </div>
+      </div>
+      <!-- ./ running-text -->
+    </ul>
+  </div>
+</div>
+ <section class="about-section-5 pt-130 pb-130">
+  <div class="container">
+    <div class="row gy-lg-0 gy-4">
+      <div class="col-lg-6">
+        <div class="about-content-5">
+          <div class="section-heading">
+            <h4
+              class="sub-heading after-none"
+              data-text-animation="fade-in"
+              data-duration="1.5"
+            >
+              Why Choose North Melbourne Web?
+            </h4>
+            <h2
+              class="section-title"
+              data-text-animation
+              data-split="word"
+              data-duration="1"
+            >
+              Our Main Goal to Satisfied Local Businesses
+            </h2>
+          </div>
+          <div class="about-tab">
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button
+                  class="nav-link active"
+                  id="nav-home-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-home"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-home"
+                  aria-selected="true"
+                >
+                  Our Mission
+                </button>
+                <button
+                  class="nav-link"
+                  id="nav-profile-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-profile"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-profile"
+                  aria-selected="false"
+                >
+                  Our Vision
+                </button>
+                <button
+                  class="nav-link"
+                  id="nav-contact-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-contact"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-contact"
+                  aria-selected="false"
+                >
+                  Our Goal
+                </button>
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="nav-home"
+                role="tabpanel"
+                aria-labelledby="nav-home-tab"
+              >
+                <h3 class="title">Our Mission Is...</h3>
+                <p class="mb-20">
+                  To revolutionize small business web design in Melbourne
+                  through <strong>innovative, affordable solutions.</strong>
+                </p>
+                <p class="mb-0">
+                  Our mission is to empower local SMBs with web presence that
+                  rivals larger competitors. We combine cutting-edge technology
+                  with affordable small business web design packages to ensure
+                  every client receives a website that not only looks great but
+                  also <strong>performs exceptionally.</strong>
+                </p>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="nav-profile"
+                role="tabpanel"
+                aria-labelledby="nav-profile-tab"
+              >
+                <h3 class="title">Our Vision Is...</h3>
+                <p class="mb-20">
+                  To be the <strong>go-to web development partner</strong> for
+                  every small business in Melbourne.
+                </p>
+                <p class="mb-0">
+                  We envision a future where every small business in Melbourne
+                  has access to
+                  <strong>professional, high-quality web design.</strong>
+                  Our vision drives us to continually innovate our services,
+                  from our WaaS model to our custom-coded websites, ensuring we
+                  stay at the forefront of small business web development.
+                </p>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="nav-contact"
+                role="tabpanel"
+                aria-labelledby="nav-contact-tab"
+              >
+                <h3 class="title">Our Goal Is...</h3>
+                <p class="mb-20">
+                  To <strong>deliver unparalleled value</strong> and support in
+                  every web project we undertake.
+                </p>
+                <p class="mb-0">
+                  Our commitment goes beyond just creating websites. We're
+                  dedicated to the success of your business. From
+                  <strong>free logo redesigns to 24/7 support</strong>, we offer
+                  comprehensive small business web design packages that cover
+                  all your digital needs. Our goal is to be a long-term partner
+                  in your business growth, providing ongoing support and
+                  expertise.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="about-img-wrap-5">
+          <div class="shapes">
+            <div class="shape shape-1">
+              <img
+                src="/assets/images/shapes/about-shape-4.png"
+                alt="web design shape"
+/>
+            </div>
+            <div class="shape shape-2">
+              <img
+                src="/assets/images/shapes/about-shape-5.png"
+                alt="web design shape"
+/>
+            </div>
+          </div>
+          <div class="about-img reveal">
+            <img
+              class="img-1"
+              src="/assets/images/images/intro1.jpg"
+              alt="about north melbourne web"
+/>
+          </div>
+          <div class="about-img-2 reveal">
+            <img
+              class="img-2"
+              src="/assets/images/images/service2.jpg"
+              alt="about north melbourne web"
+/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ./ about-section -->
+ <section id="appointment" class="appointment-section pb-130">
+  <div class="container">
+    <div class="row appointment-wrap align-items-center">
+      <div class="col-lg-5">
+        <div class="appointment-img">
+          <img
+            src="/assets/images/front/appointment.jpg"
+            alt="appointment with north melbourne web"
+/>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="appointment-content">
+          <div class="section-heading heading-3">
+            <h4
+              class="sub-heading after-none"
+              
+            >
+              Make An Appointment
+            </h4>
+            <h2
+              class="section-title"
+              
+            >
+              Let’s Start A Discussion About Your Next Projects
+            </h2>
+          </div>
+          <div class="appointment-form ">
+            <form
+              
+              name="appointment"
+              method="POST"
+              netlify
+              id="ajax_contact"
+              class="form-horizontal"
+            >
+              <div class="form-group row fade-top">
+                <div class="col-md-6">
+                  <input
+                    type="text"
+                    id="fullname"
+                    name="fullname"
+                    class="form-control"
+                    placeholder="Your Name*"
+/>
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-control"
+                    placeholder="Your Email*"
+/>
+                </div>
+              </div>
+              <div class="form-group row ">
+                <div class="col-md-12">
+                  <input
+                    type="text"
+                    id="website"
+                    name="website"
+                    class="form-control"
+                    placeholder="Website URL*"
+/>
+                </div>
+              </div>
+              <div class="form-group row ">
+                <div class="col-md-12">
+                  <textarea
+                    id="message"
+                    name="message"
+                    cols="30"
+                    rows="5"
+                    class="form-control address"
+                    placeholder="Type Comment*"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="submit-btn">
+                <button id="submit" class="rr-primary-btn" type="submit">
+                  Get in Touch
+                  <i class="fa-sharp fa-regular fa-arrow-right"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ./ appointment-section -->  <!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<footer class="footer-section footer-2 footer-4 bg-dark-1">
+  <div class="shape">
+    <img src="/assets/images/shapes/footer-bg-shape.png" alt="footer" />
+  </div>
+  <div class="container">
+    <div class="row footer-wrap">
+      <div class="col-lg-3 col-md-6">
+        <div class="footer-widget logo-widget">
+          <div class="widget-header">
+            <div class="footer-logo">
+              <a href="/"
+                ><img
+                  src="/assets/svgs/logo-white.svg"
+                  alt="north melbourne weblogo"
+              /></a>
+            </div>
+          </div>
+          
+          <ul class="social-list list-2">
+            <li class="facebook">
+              <a href="https://www.facebook.com/northmelbourneweb/">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="pinterest">
+              <a href="https://www.linkedin.com/company/north-melourne-web/">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+             </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="footer-widget footer-col-2">
+          <div class="widget-header">
+            <h3 class="widget-title">Useful Links</h3>
+          </div>
+          <ul class="footer-list">
+            <li>
+              <a href="/about">About Us</a>
+            </li>
+            <li>
+              <a href="/services">Our Services</a>
+            </li>
+            <li>
+              <a href="/pricing">Pricing</a>
+            </li>
+            <li>
+              <a href="/blog">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="footer-widget">
+          <div class="widget-header">
+            <a href="/contact">
+              <h3 class="widget-title">Contact Us</h3>
+            </a>
+          </div>
+          <ul class="address-list">
+            <li>
+              <a href="mailto:design@northmelbourneweb.com"
+                >design@northmelbourneweb.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+61486010043">+61 (0) 486 010 043</a>
+            </li>
+            <li>
+              Kingsway Dr, Lalor VIC <br />
+              Melbourne, Australia
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+  </div>
+  <div class="copyright-area">
+    <div class="container">
+      <div class="row copyright-content justify-content-center">
+        <div class="col-lg-6 col-md-12">
+          <p class="mb-0">
+            <a href="/copyright"
+              >© 2024 North Melbourne Web. All Rights Reserved.</a
+            >
+            <span style="color: #fff">ABN: 50 680 449 870</span>
+          </p>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <ul class="copyright-list">
+            <li>
+              <a href="/copyright">Copyright</a>
+            </li>
+            <li>
+              <a href="/privacy-policy">Privacy &amp; Cookie Policy</a>
+            </li>
+            <li>
+              <a href="/terms-of-service">Terms of Services</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- ./ footer-section -->
+
+        </div>
+      </div>
+    </main>
+    <div id="scroll-percentage"><span id="scroll-percentage-value"></span></div> <div id="theme-toogle" class="switcher-button">
+  <div class="switcher-button-inner-left"></div>
+  <div class="switcher-button-inner"></div>
+</div>
+
+
+    <!-- JS here -->
+    <script defer src="/assets/js/vendor/jquary-3.6.0.min.js"></script>
+    <script defer src="/assets/js/vendor/bootstrap-bundle.js"></script>
+    <script defer src="/assets/js/vendor/imagesloaded-pkgd.js"></script>
+    <script defer src="/assets/js/vendor/waypoints.min.js"></script>
+    <script defer src="/assets/js/vendor/venobox.min.js"></script>
+    <script defer src="/assets/js/vendor/odometer.min.js"></script>
+    <script defer src="/assets/js/vendor/meanmenu.js"></script>
+    <script defer src="/assets/js/vendor/jquery.isotope.js"></script>
+    <script defer src="/assets/js/vendor/wow.min.js"></script>
+    <script defer src="/assets/js/vendor/swiper.min.js"></script>
+    <script defer src="/assets/js/vendor/split-type.min.js"></script>
+    <script defer src="/assets/js/vendor/gsap.min.js"></script>
+    <script defer src="/assets/js/vendor/scroll-trigger.min.js"></script>
+    <script defer src="/assets/js/vendor/scroll-smoother.js"></script>
+    <script defer src="/assets/js/vendor/jquery.carouselTicker.js"></script>
+    <script defer src="/assets/js/vendor/nice-select.js"></script>
+    <script defer src="/assets/js/ajax-form.js"></script>
+    <script defer src="/assets/js/slider.js"></script>
+    <script defer src="/assets/js/contact.js"></script>
+    <script defer src="/assets/js/main.js"></script>
+  </body>
+</html>

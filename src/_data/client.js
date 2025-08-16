@@ -1,8 +1,8 @@
 module.exports = {
-    "name": "Alan Huynh",
-    "email": "hdmquan@gmail.com",
+    "name": "North Melbourne Web",
+    "email": "design@northmelbourneweb.com",
     "phoneForTel": "0486-010-043",
-    "phoneFormatted": "+61 486 010 043",
+    "phoneFormatted": "+61 (0) 486 010 043",
     "address": {
         "lineOne": "",
         "lineTwo": "",
@@ -12,9 +12,9 @@ module.exports = {
         "mapLink": ""
     },
     "socials": {
-        "linkedin": "https://www.linkedin.com/in/hdmquan",
-        "twitter": "https://www.instagram.com/",
+        "facebook": "https://www.facebook.com/",
+        "instagram": "https://www.instagram.com/",
     },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
-    "domain": "https://alan-huynh.is-a.dev"
+    "domain": "https://northmelbourneweb.com"
 };

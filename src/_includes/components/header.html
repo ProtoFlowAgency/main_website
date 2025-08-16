@@ -2,38 +2,270 @@
 <!--                 Navigation                   -->
 <!-- ============================================ -->
 
-<header id="navigation">
-  <div class="container">
-    <nav class="nav" role="navigation">
-      <button class="toggle" aria-label="mobile menu toggle">
-        <div class="box" aria-hidden="true">
-          <span class="line line1" aria-hidden="true"></span>
-          <span class="line line2" aria-hidden="true"></span>
-          <span class="line line3" aria-hidden="true"></span>
-        </div>
-      </button>
-    <div class="ul-wrapper">
-        <ul id="expanded" class="ul" aria-expanded="false">
-          <li class="li">
-            <a href="/" class="li-link"> Home </a>
+<header class="header header-6 sticky-active">
+  <div class="bg-shape"></div>
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-inner">
+        <ul class="top-bar-list">
+          <li>
+            <i class="fa-sharp fa-solid fa-phone"></i>
+            <a href="tel:+61486010043">+61 (0) 486 010 043</a>
           </li>
-          <li class="li">
-            <a href="/project" class="li-link"> Projects </a>
+          <li>
+            <i class="fa-sharp fa-solid fa-location-dot"></i>Kingsway Dr, Lalor
+            VIC
           </li>
-          <li class="li">
-            <a href="/blog" class="li-link"> Blogs </a>
-          </li>
-          <li class="li">
-            <a href="/#contact" class="li-link"> Contact </a>
+          <li>
+            <i class="fa-sharp fa-regular fa-envelope"></i>
+            <a href="mailto:design@northmelbourneweb.com"
+              >design@northmelbourneweb.com</a
+            >
           </li>
         </ul>
+        <div class="top-bar-right">
+          <div class="top-bar-social">
+            <span>Follow Us On: </span>
+            <ul class="social-list">
+              <li>
+                <a href="https://www.facebook.com/northmelbourneweb/">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/company/north-melourne-web/">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </nav>
-    <button id="dark-mode-toggle" aria-label="dark mode toggle">
-            <img class="moon" aria-hidden="true" src="/assets/svgs/moon-svgrepo-com.svg" decoding="async" alt="moon" width="15" height="15">
-            <img class="sun" aria-hidden="true" src="/assets/svgs/sun-svgrepo-com.svg" decoding="async" alt="sun" width="15" height="15">
-        </button>
     </div>
-    
+  </div>
+  <div class="primary-header">
+    <div class="container">
+      <div class="primary-header-inner">
+        <div class="header-logo">
+          <a href="/">
+            <img
+              class="logo-dark"
+              src="/assets/svgs/logo-white.svg"
+              alt="North Melbourne Web Logo"
+            />
+            <img
+              class="logo-light"
+              src="/assets/svgs/logo-white.svg"
+              alt="North Melbourne Web Logo"
+            />
+          </a>
+        </div>
+        <div class="header-menu-wrap">
+          <div class="mobile-menu-items">
+            <ul>
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li class="menu-item-has-children">
+                <a href="/about">About</a>
+                <ul>
+                  <li>
+                    <a href="/about">Why Us?</a>
+                  </li>
+                  <li>
+                    <a href="/portfolio">Portfolio</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item-has-children">
+                <a href="/services">Services</a>
+                <ul>
+                  <li>
+                    <a href="/web-development">Web Development</a>
+                  </li>
+                  <li>
+                    <a href="/web-design">Web Design</a>
+                  </li>
+                  <li>
+                    <a href="/seo-optimization">SEO Optimization</a>
+                  </li>
+                  <li>
+                    <a href="/logos-and-branding">Logos & Branding</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="/blog">Blog</a>
+              </li>
+              <li>
+                <a href="/pricing">Pricing</a>
+              </li>
+              <li>
+                <a href="/contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- /.header-menu-wrap -->
+        <div class="header-right-wrap">
+          <div class="header-right">
+            <div class="header-btn-wrap">
+              <a href="/contact" class="rr-primary-btn"
+                >Get in touch <i class="fa-sharp fa-regular fa-arrow-right"></i>
+              </a>
+            </div>
+            <div class="sidebar-icon">
+              <button class="sidebar-trigger open">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+          </div>
+          <!-- /.header-right -->
+        </div>
+      </div>
+      <!-- /.primary-header-inner -->
+    </div>
   </div>
 </header>
+<!-- /.Main Header -->
+
+<div id="popup-search-box">
+  <div class="box-inner-wrap d-flex align-items-center">
+    <form id="form" action="#" method="get" role="search">
+      <input
+        id="popup-search"
+        type="text"
+        name="s"
+        placeholder="Type keywords here..."
+      />
+    </form>
+    <div class="search-close">
+      <i class="fa-sharp fa-regular fa-xmark"></i>
+    </div>
+  </div>
+</div>
+<!-- /#popup-search-box -->
+
+<div class="mobile-side-menu">
+  <div class="side-menu-content">
+    <div class="side-menu-head">
+      <a href="/"
+        ><img src="/assets/svgs/logo-white.svg" alt="north melbourne web logo"
+      /></a>
+      <button class="mobile-side-menu-close">
+        <i class="fa-regular fa-xmark"></i>
+      </button>
+    </div>
+    <div class="side-menu-wrap"></div>
+    <ul class="side-menu-list">
+      <li>
+        <i class="fa-light fa-location-dot"></i>Address :
+        <span>Kingsway Dr, Lalor VIC</span>
+      </li>
+      <li>
+        <i class="fa-light fa-phone"></i>Phone :
+        <a href="tel:+61486010043">+61 (0) 486 010 043</a>
+      </li>
+      <li>
+        <i class="fa-light fa-envelope"></i>Email :
+        <a href="mailto:design@northmelbourneweb.com"
+          >design@northmelbourneweb.com</a
+        >
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- /.mobile-side-menu -->
+<div class="mobile-side-menu-overlay"></div>
+
+<div id="sidebar-area" class="sidebar-area">
+  <button class="sidebar-trigger close">
+    <svg
+      class="sidebar-close"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      x="0px"
+      y="0px"
+      width="16px"
+      height="12.7px"
+      viewBox="0 0 16 12.7"
+      style="enable-background: new 0 0 16 12.7"
+      xml:space="preserve"
+    >
+      <g>
+        <rect
+          x="0"
+          y="5.4"
+          transform="matrix(0.7071 -0.7071 0.7071 0.7071 -2.1569 7.5208)"
+          width="16"
+          height="2"
+        ></rect>
+        <rect
+          x="0"
+          y="5.4"
+          transform="matrix(0.7071 0.7071 -0.7071 0.7071 6.8431 -3.7929)"
+          width="16"
+          height="2"
+        ></rect>
+      </g>
+    </svg>
+  </button>
+  <div class="side-menu-content">
+    <div class="side-menu-logo">
+      <a class="dark-img" href="/"
+        ><img src="/assets/svgs/logo-white.svg" alt="north melbourne web logo"
+      /></a>
+      <a class="light-img" href="/"
+        ><img src="/assets/svgs/logo-black.svg" alt="north melbourne web logo"
+      /></a>
+    </div>
+    <div class="side-menu-wrap"></div>
+    <div class="side-menu-about">
+      <div class="side-menu-header">
+        <h3>About Us</h3>
+      </div>
+      <p>
+        Professional Web Design & Development for Small Businesses Get a custom,
+        hand-coded website starting at just A$199/month. No page builders or
+        WordPress - just clean, professional design.
+      </p>
+      <a href="/contact" class="rr-primary-btn">Contact Us</a>
+    </div>
+    <div class="side-menu-contact">
+      <div class="side-menu-header">
+        <h3>Contact Us</h3>
+      </div>
+      <ul class="side-menu-list">
+        <li>
+          <i class="fas fa-map-marker-alt"></i>
+          <p>Kingsway Dr, Lalor VIC</p>
+        </li>
+        <li>
+          <i class="fas fa-phone"></i>
+          <a href="tel:+61486010043">+61 (0) 486 010 043</a>
+        </li>
+        <li>
+          <i class="fas fa-envelope-open-text"></i>
+          <a href="mailto:design@northmelbourneweb.com"
+            >design@northmelbourneweb.com</a
+          >
+        </li>
+      </ul>
+    </div>
+    <ul class="side-menu-social">
+      <li>
+        <a href="https://www.facebook.com/northmelbourneweb/">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/company/north-melourne-web/">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<!--/.sidebar-area-->

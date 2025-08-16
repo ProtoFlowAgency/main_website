@@ -1,0 +1,839 @@
+<!-- A fully fleshed-out <head>, dynamically changing based on client.json and the page front matter -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Standard meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tired of your brand color blending into the background? Or cannot find the perfect color that works for both light and dark background? 𝐇𝐒𝐋 (Hue, Saturation, Lightness) is your secret weapon to creating colors that pop. " />
+    <meta name="keywords" content="" />
+    <link rel="canonical" href="https://northmelbourneweb.com/blog/choose-brand-accent-color-with-hsl/" />
+
+    <!--Social Media Display-->
+    <meta property="og:title" content="Eye-Catching Colors for Your Brand: Simple Trick with Big Impact!" />
+    <meta property="og:description" content="Tired of your brand color blending into the background? Or cannot find the perfect color that works for both light and dark background? 𝐇𝐒𝐋 (Hue, Saturation, Lightness) is your secret weapon to creating colors that pop. " />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://northmelbourneweb.com/blog/choose-brand-accent-color-with-hsl/" />
+    <meta property="og:image" content="/assets/images/logo-small.png" />
+    <meta
+      property="og:image:secure_url"
+      content="/assets/images/logo-small.png"
+    />
+
+    <!--Favicons-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicons/favicon-32x32.png?v1"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Preloads -->
+    <link rel="preload" as="image" href="/assets/svgs/logo-white.svg" />
+
+    <!-- Preload an image - tag not rendered if preloadImg is blank to stop console errors -->
+    
+    <link rel="preload" as="image" href="/assets/images/blog/good-color.png" />
+     
+<link rel="stylesheet" href="/assets/css/blog.css" />
+
+
+    <title>Eye-Catching Colors for Your Brand: Simple Trick with Big Impact!</title>
+
+    <!-- Sitewide Stylesheets and Scripts -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="/assets/css/venobox.min.css" />
+    <link rel="stylesheet" href="/assets/css/animate.min.css" />
+    <link rel="stylesheet" href="/assets/css/keyframe-animation.css" />
+    <link rel="stylesheet" href="/assets/css/odometer.min.css" />
+    <link rel="stylesheet" href="/assets/css/nice-select.css" />
+    <link rel="stylesheet" href="/assets/css/carouselTicker.css" />
+    <link rel="stylesheet" href="/assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+  </head>
+  <body>
+    <!--Screen reader skip main nav-->
+    <a class="skip" aria-label="skip to main content" href="#main" tabindex="1"
+      >Click To Skip To Main Content</a
+    >
+
+    <!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header class="header header-6 sticky-active">
+  <div class="bg-shape"></div>
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-inner">
+        <ul class="top-bar-list">
+          <li>
+            <i class="fa-sharp fa-solid fa-phone"></i>
+            <a href="tel:+61486010043">+61 (0) 486 010 043</a>
+          </li>
+          <li>
+            <i class="fa-sharp fa-solid fa-location-dot"></i>Kingsway Dr, Lalor
+            VIC
+          </li>
+          <li>
+            <i class="fa-sharp fa-regular fa-envelope"></i>
+            <a href="mailto:design@northmelbourneweb.com"
+              >design@northmelbourneweb.com</a
+            >
+          </li>
+        </ul>
+        <div class="top-bar-right">
+          <div class="top-bar-social">
+            <span>Follow Us On: </span>
+            <ul class="social-list">
+              <li>
+                <a href="https://www.facebook.com/northmelbourneweb/">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/company/north-melourne-web/">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="primary-header">
+    <div class="container">
+      <div class="primary-header-inner">
+        <div class="header-logo">
+          <a href="/">
+            <img
+              class="logo-dark"
+              src="/assets/svgs/logo-white.svg"
+              alt="North Melbourne Web Logo"
+            />
+            <img
+              class="logo-light"
+              src="/assets/svgs/logo-white.svg"
+              alt="North Melbourne Web Logo"
+            />
+          </a>
+        </div>
+        <div class="header-menu-wrap">
+          <div class="mobile-menu-items">
+            <ul>
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li class="menu-item-has-children">
+                <a href="/about">About</a>
+                <ul>
+                  <li>
+                    <a href="/about">Why Us?</a>
+                  </li>
+                  <li>
+                    <a href="/portfolio">Portfolio</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item-has-children">
+                <a href="/services">Services</a>
+                <ul>
+                  <li>
+                    <a href="/web-development">Web Development</a>
+                  </li>
+                  <li>
+                    <a href="/web-design">Web Design</a>
+                  </li>
+                  <li>
+                    <a href="/seo-optimization">SEO Optimization</a>
+                  </li>
+                  <li>
+                    <a href="/logos-and-branding">Logos & Branding</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="/blog">Blog</a>
+              </li>
+              <li>
+                <a href="/pricing">Pricing</a>
+              </li>
+              <li>
+                <a href="/contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- /.header-menu-wrap -->
+        <div class="header-right-wrap">
+          <div class="header-right">
+            <div class="header-btn-wrap">
+              <a href="/contact" class="rr-primary-btn"
+                >Get in touch <i class="fa-sharp fa-regular fa-arrow-right"></i>
+              </a>
+            </div>
+            <div class="sidebar-icon">
+              <button class="sidebar-trigger open">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+          </div>
+          <!-- /.header-right -->
+        </div>
+      </div>
+      <!-- /.primary-header-inner -->
+    </div>
+  </div>
+</header>
+<!-- /.Main Header -->
+
+<div id="popup-search-box">
+  <div class="box-inner-wrap d-flex align-items-center">
+    <form id="form" action="#" method="get" role="search">
+      <input
+        id="popup-search"
+        type="text"
+        name="s"
+        placeholder="Type keywords here..."
+      />
+    </form>
+    <div class="search-close">
+      <i class="fa-sharp fa-regular fa-xmark"></i>
+    </div>
+  </div>
+</div>
+<!-- /#popup-search-box -->
+
+<div class="mobile-side-menu">
+  <div class="side-menu-content">
+    <div class="side-menu-head">
+      <a href="/"
+        ><img src="/assets/svgs/logo-white.svg" alt="north melbourne web logo"
+      /></a>
+      <button class="mobile-side-menu-close">
+        <i class="fa-regular fa-xmark"></i>
+      </button>
+    </div>
+    <div class="side-menu-wrap"></div>
+    <ul class="side-menu-list">
+      <li>
+        <i class="fa-light fa-location-dot"></i>Address :
+        <span>Kingsway Dr, Lalor VIC</span>
+      </li>
+      <li>
+        <i class="fa-light fa-phone"></i>Phone :
+        <a href="tel:+61486010043">+61 (0) 486 010 043</a>
+      </li>
+      <li>
+        <i class="fa-light fa-envelope"></i>Email :
+        <a href="mailto:design@northmelbourneweb.com"
+          >design@northmelbourneweb.com</a
+        >
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- /.mobile-side-menu -->
+<div class="mobile-side-menu-overlay"></div>
+
+<div id="sidebar-area" class="sidebar-area">
+  <button class="sidebar-trigger close">
+    <svg
+      class="sidebar-close"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      x="0px"
+      y="0px"
+      width="16px"
+      height="12.7px"
+      viewBox="0 0 16 12.7"
+      style="enable-background: new 0 0 16 12.7"
+      xml:space="preserve"
+    >
+      <g>
+        <rect
+          x="0"
+          y="5.4"
+          transform="matrix(0.7071 -0.7071 0.7071 0.7071 -2.1569 7.5208)"
+          width="16"
+          height="2"
+        ></rect>
+        <rect
+          x="0"
+          y="5.4"
+          transform="matrix(0.7071 0.7071 -0.7071 0.7071 6.8431 -3.7929)"
+          width="16"
+          height="2"
+        ></rect>
+      </g>
+    </svg>
+  </button>
+  <div class="side-menu-content">
+    <div class="side-menu-logo">
+      <a class="dark-img" href="/"
+        ><img src="/assets/svgs/logo-white.svg" alt="north melbourne web logo"
+      /></a>
+      <a class="light-img" href="/"
+        ><img src="/assets/svgs/logo-black.svg" alt="north melbourne web logo"
+      /></a>
+    </div>
+    <div class="side-menu-wrap"></div>
+    <div class="side-menu-about">
+      <div class="side-menu-header">
+        <h3>About Us</h3>
+      </div>
+      <p>
+        Professional Web Design & Development for Small Businesses Get a custom,
+        hand-coded website starting at just A$199/month. No page builders or
+        WordPress - just clean, professional design.
+      </p>
+      <a href="/contact" class="rr-primary-btn">Contact Us</a>
+    </div>
+    <div class="side-menu-contact">
+      <div class="side-menu-header">
+        <h3>Contact Us</h3>
+      </div>
+      <ul class="side-menu-list">
+        <li>
+          <i class="fas fa-map-marker-alt"></i>
+          <p>Kingsway Dr, Lalor VIC</p>
+        </li>
+        <li>
+          <i class="fas fa-phone"></i>
+          <a href="tel:+61486010043">+61 (0) 486 010 043</a>
+        </li>
+        <li>
+          <i class="fas fa-envelope-open-text"></i>
+          <a href="mailto:design@northmelbourneweb.com"
+            >design@northmelbourneweb.com</a
+          >
+        </li>
+      </ul>
+    </div>
+    <ul class="side-menu-social">
+      <li>
+        <a href="https://www.facebook.com/northmelbourneweb/">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/company/north-melourne-web/">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<!--/.sidebar-area-->
+
+    <main id="main">
+      <div id="smooth-warpper">
+        <div id="smooth-content">
+          
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section class="page-header" data-background="/assets/images/blog/good-color.png">
+  <div class="overlay"></div>
+  <div class="shapes">
+    <div class="shape shape-1">
+      <img
+        src="/assets/images/shapes/page-header-shape-1.png"
+        alt="web design shape"
+      />
+    </div>
+    <div class="shape shape-2">
+      <img
+        src="/assets/images/shapes/page-header-shape-2.png"
+        alt="web design shape"
+      />
+    </div>
+    <div class="shape shape-3">
+      <img
+        src="/assets/images/shapes/page-header-shape-3.png"
+        alt="web design shape"
+      />
+    </div>
+  </div>
+  <div class="container">
+    <div class="page-header-content text-center">
+      <h1 class="title">Eye-Catching Colors for Your Brand: Simple Trick with Big Impact!</h1>
+      <h4 class="sub-title">
+        <a class="home" href="/">Home </a>
+        <span></span>
+        <a class="inner-page" href="/blog"> Blog</a>
+      </h4>
+    </div>
+  </div>
+</section>
+<!-- ./ page-header -->
+
+<section class="blog-details pt-130 pb-130">
+  <style>
+    .blog-details-content p,
+    .blog-details-content li {
+      font-size: 1.2rem;
+      color: #000;
+      margin-bottom: 1rem;
+    }
+    .blog-details-content a {
+      color: #000;
+      text-decoration: underline;
+    }
+  </style>
+  <div class="container">
+    <div class="row gy-5">
+      <div class="col-lg-8 col-md-12">
+        <div class="blog-details-wrap">
+          <div class="blog-details-img mb-40">
+            <img src="/assets/images/blog/good-color.png" alt="How to choose good color for your brand?" />
+          </div>
+          <ul class="post-meta">
+            <li>
+              <i class="fa-sharp fa-regular fa-clock"></i>Sep 20, 2024
+            </li>
+            <li><i class="fa-light fa-user"></i>Post by: </li>
+          </ul>
+          <div class="blog-details-content"><p>By adjusting the Saturation and Lightness just right, you can transform any color into a standout shade that looks great on both white and black backgrounds. No more guessing or trial and error!</p>
+<p><strong>Here's the secret:</strong></p>
+<ol>
+<li>Open an <strong>HSL color picker</strong>. I use <a href="https://hslpicker.com">https://hslpicker.com </a></li>
+<li>(Optional) Copy and paste your current color <strong>hex code</strong> in bottom left box starting with #.</li>
+<li>Adjust the <strong>Saturation slider</strong> (the second slider from the top) to a value between 80 and 100. This controls how vibrant the color is.</li>
+<li>Adjust the <strong>Lightness slider</strong> (the third slider from the top) to a value between 60 and 80. This controls how bright or dark the color is.</li>
+<li>Adjust your desire color with the <strong>Hue slider</strong> (first one on top) to your liking. You can ignore the last slider.</li>
+</ol>
+<p>By following these steps, you'll ensure your chosen color stands out, no matter the background!</p>
+<p><strong>Feeling overwhelm with building a website</strong>? North Melbourne Web builds websites and online presence solutions for SMBs in Australia, starting at just A$199/mo. We handle everything, including <strong>24/7 support</strong>, local SEO, and full Google Analytics. Let us help your brand stand out online!</p>
+</div>
+          <div class="tags">
+            <div class="tag-left">
+              <ul class="tag-list">
+                
+                <li>
+                  <a href="/blog/tag/sitemap">sitemap</a>
+                </li>
+                
+                <li>
+                  <a href="/blog/tag/post">post</a>
+                </li>
+                
+                <li>
+                  <a href="/blog/tag/branding">branding</a>
+                </li>
+                
+                <li>
+                  <a href="/blog/tag/webdesign">webdesign</a>
+                </li>
+                
+                <li>
+                  <a href="/blog/tag/color">color</a>
+                </li>
+                
+              </ul>
+            </div>
+            <div class="social-list-wrap">
+              <h4 class="follow">Follow Us:</h4>
+              <ul class="social-list">
+                <li>
+                  <a href="https://www.facebook.com/northmelbourneweb/">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/company/north-melourne-web/"
+                  >
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="blog-author-wrap">
+            <div class="blog-author-item">
+              <div class="author-img">
+                <img src="/assets/images/blog/author-img.png" alt="img" />
+              </div>
+              <div class="content">
+                <h3 class="name">About Auhor</h3>
+                <p>
+                  Alan is the founder of North Melbourne Web, an agency
+                  providing professional, fully managed websites for small
+                  businesses through an affordable Website-as-a-Service (WaaS)
+                  model.
+                </p>
+                <ul class="social-list">
+                  <li>
+                    <a href="https://www.facebook.com/northmelbourneweb/">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/company/north-melourne-web/"
+                    >
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    // This script will find all <a> tags inside the .blog-details-content div and force them to open in a new tab.
+    document.querySelectorAll(".blog-details-content a").forEach((link) => {
+      link.setAttribute("target", "_blank");
+    });
+  </script>
+</section>
+<!-- End .main-content -->
+
+<section class="blog-section-3 pb-130 fade-wrapper">
+  <div class="shapes">
+    <div class="shape shape-1">
+      <img
+        src="/assets/images/shapes/blog-round-shape-1.png"
+        alt="web design shape"
+      />
+    </div>
+    <div class="shape shape-2">
+      <img
+        src="/assets/images/shapes/blog-round-shape-2.png"
+        alt="web design shape"
+      />
+    </div>
+  </div>
+  <div class="container">
+    <div class="section-heading text-center">
+      <h4 class="sub-heading" data-text-animation="fade-in" data-duration="1.5">
+        NEWS & LATEST UPDATES
+      </h4>
+      <h2
+        class="section-title"
+        data-text-animation
+        data-split="word"
+        data-duration="1"
+      >
+        Check Our Company Inside Story
+      </h2>
+    </div>
+    <div class="row gy-lg-0 gy-5 justify-content-center">
+      <div class="col-lg-4 col-md-6">
+        <div class="post-card-2 card-3 fade-top">
+          <div class="post-thumb">
+            <img src="/assets/images/blog/good-color.png" alt="How to choose good color for your brand?" />
+          </div>
+          <div class="post-content-wrap">
+            <div class="post-content">
+              <ul class="post-meta">
+                <li>
+                  <i class="fa-sharp fa-regular fa-clock"></i>Sep 20, 2024
+                </li>
+                <li>
+                  <i class="fa-light fa-user"></i>Post by: Alan Huynh
+                </li>
+              </ul>
+              <h3 class="title">
+                <a href="/blog/choose-brand-accent-color-with-hsl/">Eye-Catching Colors for Your Brand: Simple Trick with Big Impact!</a>
+              </h3>
+              <a href="/blog/choose-brand-accent-color-with-hsl/" class="rr-primary-btn">
+                Read More <i class="fa-sharp fa-regular fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="post-card-2 card-3 fade-top">
+          <div class="post-thumb">
+            <img src="/assets/images/blog/leafe-landscaping-mockup.jpg" alt="Leaf Landscaper Web Design Mockup" />
+          </div>
+          <div class="post-content-wrap">
+            <div class="post-content">
+              <ul class="post-meta">
+                <li>
+                  <i class="fa-sharp fa-regular fa-clock"></i>Sep 12, 2024
+                </li>
+                <li>
+                  <i class="fa-light fa-user"></i>Post by: Alan Huynh
+                </li>
+              </ul>
+              <h3 class="title">
+                <a href="/blog/leafe-landscaping/">Client Spotlight: Leafe Landscaping</a>
+              </h3>
+              <a href="/blog/leafe-landscaping/" class="rr-primary-btn">
+                Read More <i class="fa-sharp fa-regular fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+       
+    </div>
+  </div>
+</section>
+<!-- ./ blog-section -->
+ <section id="appointment" class="appointment-section pb-130">
+  <div class="container">
+    <div class="row appointment-wrap align-items-center">
+      <div class="col-lg-5">
+        <div class="appointment-img">
+          <img
+            src="/assets/images/front/appointment.jpg"
+            alt="appointment with north melbourne web"
+/>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="appointment-content">
+          <div class="section-heading heading-3">
+            <h4
+              class="sub-heading after-none"
+              
+            >
+              Make An Appointment
+            </h4>
+            <h2
+              class="section-title"
+              
+            >
+              Let’s Start A Discussion About Your Next Projects
+            </h2>
+          </div>
+          <div class="appointment-form ">
+            <form
+              
+              name="appointment"
+              method="POST"
+              netlify
+              id="ajax_contact"
+              class="form-horizontal"
+            >
+              <div class="form-group row fade-top">
+                <div class="col-md-6">
+                  <input
+                    type="text"
+                    id="fullname"
+                    name="fullname"
+                    class="form-control"
+                    placeholder="Your Name*"
+/>
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-control"
+                    placeholder="Your Email*"
+/>
+                </div>
+              </div>
+              <div class="form-group row ">
+                <div class="col-md-12">
+                  <input
+                    type="text"
+                    id="website"
+                    name="website"
+                    class="form-control"
+                    placeholder="Website URL*"
+/>
+                </div>
+              </div>
+              <div class="form-group row ">
+                <div class="col-md-12">
+                  <textarea
+                    id="message"
+                    name="message"
+                    cols="30"
+                    rows="5"
+                    class="form-control address"
+                    placeholder="Type Comment*"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="submit-btn">
+                <button id="submit" class="rr-primary-btn" type="submit">
+                  Get in Touch
+                  <i class="fa-sharp fa-regular fa-arrow-right"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ./ appointment-section -->  <!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<footer class="footer-section footer-2 footer-4 bg-dark-1">
+  <div class="shape">
+    <img src="/assets/images/shapes/footer-bg-shape.png" alt="footer" />
+  </div>
+  <div class="container">
+    <div class="row footer-wrap">
+      <div class="col-lg-3 col-md-6">
+        <div class="footer-widget logo-widget">
+          <div class="widget-header">
+            <div class="footer-logo">
+              <a href="/"
+                ><img
+                  src="/assets/svgs/logo-white.svg"
+                  alt="north melbourne weblogo"
+              /></a>
+            </div>
+          </div>
+          
+          <ul class="social-list list-2">
+            <li class="facebook">
+              <a href="https://www.facebook.com/northmelbourneweb/">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="pinterest">
+              <a href="https://www.linkedin.com/company/north-melourne-web/">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+             </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="footer-widget footer-col-2">
+          <div class="widget-header">
+            <h3 class="widget-title">Useful Links</h3>
+          </div>
+          <ul class="footer-list">
+            <li>
+              <a href="/about">About Us</a>
+            </li>
+            <li>
+              <a href="/services">Our Services</a>
+            </li>
+            <li>
+              <a href="/pricing">Pricing</a>
+            </li>
+            <li>
+              <a href="/blog">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="footer-widget">
+          <div class="widget-header">
+            <a href="/contact">
+              <h3 class="widget-title">Contact Us</h3>
+            </a>
+          </div>
+          <ul class="address-list">
+            <li>
+              <a href="mailto:design@northmelbourneweb.com"
+                >design@northmelbourneweb.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+61486010043">+61 (0) 486 010 043</a>
+            </li>
+            <li>
+              Kingsway Dr, Lalor VIC <br />
+              Melbourne, Australia
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+  </div>
+  <div class="copyright-area">
+    <div class="container">
+      <div class="row copyright-content justify-content-center">
+        <div class="col-lg-6 col-md-12">
+          <p class="mb-0">
+            <a href="/copyright"
+              >© 2024 North Melbourne Web. All Rights Reserved.</a
+            >
+            <span style="color: #fff">ABN: 50 680 449 870</span>
+          </p>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <ul class="copyright-list">
+            <li>
+              <a href="/copyright">Copyright</a>
+            </li>
+            <li>
+              <a href="/privacy-policy">Privacy &amp; Cookie Policy</a>
+            </li>
+            <li>
+              <a href="/terms-of-service">Terms of Services</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- ./ footer-section -->
+
+        </div>
+      </div>
+    </main>
+    <div id="scroll-percentage"><span id="scroll-percentage-value"></span></div> <div id="theme-toogle" class="switcher-button">
+  <div class="switcher-button-inner-left"></div>
+  <div class="switcher-button-inner"></div>
+</div>
+
+
+    <!-- JS here -->
+    <script defer src="/assets/js/vendor/jquary-3.6.0.min.js"></script>
+    <script defer src="/assets/js/vendor/bootstrap-bundle.js"></script>
+    <script defer src="/assets/js/vendor/imagesloaded-pkgd.js"></script>
+    <script defer src="/assets/js/vendor/waypoints.min.js"></script>
+    <script defer src="/assets/js/vendor/venobox.min.js"></script>
+    <script defer src="/assets/js/vendor/odometer.min.js"></script>
+    <script defer src="/assets/js/vendor/meanmenu.js"></script>
+    <script defer src="/assets/js/vendor/jquery.isotope.js"></script>
+    <script defer src="/assets/js/vendor/wow.min.js"></script>
+    <script defer src="/assets/js/vendor/swiper.min.js"></script>
+    <script defer src="/assets/js/vendor/split-type.min.js"></script>
+    <script defer src="/assets/js/vendor/gsap.min.js"></script>
+    <script defer src="/assets/js/vendor/scroll-trigger.min.js"></script>
+    <script defer src="/assets/js/vendor/scroll-smoother.js"></script>
+    <script defer src="/assets/js/vendor/jquery.carouselTicker.js"></script>
+    <script defer src="/assets/js/vendor/nice-select.js"></script>
+    <script defer src="/assets/js/ajax-form.js"></script>
+    <script defer src="/assets/js/slider.js"></script>
+    <script defer src="/assets/js/contact.js"></script>
+    <script defer src="/assets/js/main.js"></script>
+  </body>
+</html>
