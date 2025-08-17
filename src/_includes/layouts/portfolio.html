@@ -46,7 +46,7 @@
                             <div class="icon"><i class="fa-solid fa-user"></i></div>
                             <div class="content">
                                 <span>Clients:</span>
-                                <h4 class="item-title">{{ client }}</h4>
+                                <h4 class="item-title">{{ client_name }}</h4>
                             </div>
                         </div>
                         <div class="project-details-item">
@@ -60,7 +60,10 @@
                             <div class="icon"><i class="fa-solid fa-calendar-days"></i></div>
                             <div class="content">
                                 <span>Date:</span>
-                                <h4 class="item-title">{{ date }}</h4>
+                                <h4 class="item-title">
+                                    {{ date.toLocaleDateString("en-GB", { day: "2-digit", month: "short", year: "numeric" }) }}
+                                  </h4>
+                                  
                             </div>
                         </div>
                         <div class="project-details-item">
@@ -71,50 +74,49 @@
                             </div>
                         </div>
                     </div>
-                    <h3 class="details-title mb-30">{{ sub-title }}</h3>
+                    <h3 class="details-title mb-30">{{ sub_title }}</h3>
                     <p class="mb-30">{{ description }}</p>
                     <div class="row project-details-wrap">
                         <div class="col-lg-8 col-md-12">
                             <div class="project-details-left">
                                 <div class="details-item">
-                                    <h3 class="details-title">{{ details-title-1 }}</h3>
-                                    <p>{{ details-content-1 }}</p>
+                                    <h3 class="details-title">{{ details_title_1 }}</h3>
+                                    <p>{{ details_content_1 }}</p>
                                 </div>
                                 <div class="details-item">
-                                    <h3 class="details-title">{{ details-title-2 }}</h3>
-                                    <p class="desc mb-30">{{ details-content-2 }}</p>
-                                    <p>{{ details-content-3 }}</p>
+                                    <h3 class="details-title">{{ details_title_2 }}</h3>
+                                    <p class="desc mb-30">{{ details_content_2 }}</p>
                                 </div>
                                 <div class="details-item">
                                     <blockquote>
                                         <div class="icon"><i class="fa-light fa-quote-right"></i></div>
                                         <div class="content">
                                             <p>{{ blockquote }}</p>
-                                            <h4 class="author">{{ blockquote-author }}</h4>
+                                            <h4 class="author">{{ blockquote_author }}</h4>
                                         </div>
                                     </blockquote>
                                 </div>
                                 <div class="details-item">
-                                    <h3 class="details-title">{{ details-title-3 }}</h3>
-                                    <p>{{ details-content-3 }}</p>
+                                    <h3 class="details-title">{{ details_title_3 }}</h3>
+                                    <p>{{ details_content_3 }}</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-12">
                             <div class="project-details-thumb">
-                                {% if image-1 %}
+                                {% if image_1 %}
                                 <div class="details-thumb">
-                                    <img src="{{ image-1 }}" alt="project">
+                                    <img src="{{ image_1 }}" alt="project">
                                 </div>
                                 {% endif %}
-                                {% if image-2 %}
+                                {% if image_2 %}
                                 <div class="details-thumb">
-                                    <img src="{{ image-2 }}" alt="project">
+                                    <img src="{{ image_2 }}" alt="project">
                                 </div>
                                 {% endif %}
-                                {% if image-3 %}
+                                {% if image_3 %}
                                 <div class="details-thumb">
-                                    <img src="{{ image-3 }}" alt="project">
+                                    <img src="{{ image_3 }}" alt="project">
                                 </div>
                                 {% endif %}
                             </div>

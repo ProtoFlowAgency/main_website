@@ -3,13 +3,13 @@ title: CyLynk Chatbot Development
 url: cylynkgpt
 image: /assets/images/blog/blog-details-img.png
 imageAlt: placeholder
-client: CyLynk
+client_name: CyLynk
 category:
   - Chatbot
 industry: EdTech
 date: 2025-08-17T23:00:00.000+10:00
 author: Alan Huynh
-sub-title: CyLynk Chatbot Development
+sub_title: CyLynk Chatbot Development
 description: Lorem ipsum dolor sit amet consectetur adipiscing, elit nunc
   eleifend duis sociosqu augue imperdiet, metus varius at dignissim malesuada.
   Nisi pharetra felis ullamcorper diam rutrum justo lectus ligula aptent,
@@ -26,8 +26,8 @@ description: Lorem ipsum dolor sit amet consectetur adipiscing, elit nunc
   ridiculus primis neque.
 tags:
   - post
-details-title-1: 01. The Challenge
-details-content-1: Turpis odio nascetur vel suscipit proin vestibulum bibendum
+details_title_1: 01. The Challenge
+details_content_1: Turpis odio nascetur vel suscipit proin vestibulum bibendum
   tempor. Curabitur aliquam sociis risus parturient faucibus ornare magnis
   nascetur mauris, bibendum convallis vestibulum purus tincidunt eleifend
   litora. Leo magnis egestas conubia fringilla justo platea pharetra cubilia
@@ -35,8 +35,8 @@ details-content-1: Turpis odio nascetur vel suscipit proin vestibulum bibendum
   facilisis odio eleifend vitae. Dignissim nostra hendrerit suscipit platea
   condimentum suspendisse montes porttitor, commodo potenti laoreet dictumst
   rutrum senectus luctus nulla.
-details-title-2: 02. The Solution
-details-content-2: Turpis odio nascetur vel suscipit proin vestibulum bibendum
+details_title_2: 02. The Solution
+details_content_2: Turpis odio nascetur vel suscipit proin vestibulum bibendum
   tempor. Curabitur aliquam sociis risus parturient faucibus ornare magnis
   nascetur mauris, bibendum convallis vestibulum purus tincidunt eleifend
   litora. Leo magnis egestas conubia fringilla justo platea pharetra cubilia
@@ -44,13 +44,11 @@ details-content-2: Turpis odio nascetur vel suscipit proin vestibulum bibendum
   facilisis odio eleifend vitae. Dignissim nostra hendrerit suscipit platea
   condimentum suspendisse montes porttitor, commodo potenti laoreet dictumst
   rutrum senectus luctus nulla.
-blockquote: " “Primis inceptos phasellus commodo conubia blandit neque quis, mi
-  suspendisse vivamus cum dapibus”"
-blockquote-author: Alan Huynh
-details-title-3: 03. The Result
-details-content-3: " “Primis inceptos phasellus commodo conubia blandit neque
-  quis, mi suspendisse vivamus cum dapibus”"
-image-1: /assets/images/blog/blog-details-img-1.png
-image-2: /assets/images/blog/blog-details-img-1.png
-image-3: /assets/images/blog/blog-details-img-1.png
+blockquote: "Primis inceptos phasellus commodo conubia blandit neque quis, mi suspendisse vivamus cum dapibus"
+blockquote_author: Alan Huynh
+details_title_3: 03. The Result
+details_content_3: "Primis inceptos phasellus commodo conubia blandit neque quis, mi suspendisse vivamus cum dapibus"
+image_1: /assets/images/blog/blog-details-img-1.png
+image_2: /assets/images/blog/blog-details-img-1.png
+image_3: /assets/images/blog/blog-details-img-1.png
 ---
