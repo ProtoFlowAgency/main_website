@@ -102,15 +102,21 @@
                         </div>
                         <div class="col-lg-4 col-md-12">
                             <div class="project-details-thumb">
+                                {% if image-1 %}
                                 <div class="details-thumb">
-                                    <img src="assets/img/project/project-thumb-1.png" alt="project">
+                                    <img src="{{ image-1 }}" alt="project">
                                 </div>
+                                {% endif %}
+                                {% if image-2 %}
                                 <div class="details-thumb">
-                                    <img src="assets/img/project/project-thumb-2.png" alt="project">
+                                    <img src="{{ image-2 }}" alt="project">
                                 </div>
+                                {% endif %}
+                                {% if image-3 %}
                                 <div class="details-thumb">
-                                    <img src="assets/img/project/project-thumb-3.png" alt="project">
+                                    <img src="{{ image-3 }}" alt="project">
                                 </div>
+                                {% endif %}
                             </div>
                         </div>
                     </div>
@@ -155,7 +161,7 @@
             <div class="col-lg-6">
                 <div class="cs-item">
                     <div class="cs-thumb">
-                        <img src="assets/img/images/cs-img-1.png" alt="img">
+                        <img src="/assets/images/images/cs-img-1.png" alt="img">
                         <a class="cs-btn" href="#"><i class="fa-light fa-arrow-right-long"></i></a>
                     </div>
                     <div class="cs-content">
@@ -167,7 +173,7 @@
             <div class="col-lg-6">
                 <div class="cs-item">
                     <div class="cs-thumb">
-                        <img src="assets/img/images/cs-img-2.png" alt="img">
+                        <img src="/assets/images/images/cs-img-2.png" alt="img">
                         <a class="cs-btn" href="#"><i class="fa-light fa-arrow-right-long"></i></a>
                     </div>
                     <div class="cs-content">
