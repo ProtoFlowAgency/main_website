@@ -25,7 +25,7 @@ description: Lorem ipsum dolor sit amet consectetur adipiscing, elit nunc
   metus conubia lobortis tempor elementum augue, tempus taciti convallis aptent
   ridiculus primis neque.
 tags:
-  - post
+  - chatbot
 details_title_1: 01. The Challenge
 details_content_1: Turpis odio nascetur vel suscipit proin vestibulum bibendum
   tempor. Curabitur aliquam sociis risus parturient faucibus ornare magnis

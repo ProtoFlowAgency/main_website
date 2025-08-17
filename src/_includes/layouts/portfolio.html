@@ -20,7 +20,7 @@
 </section>
 <!-- ./ page-header -->
 
-<section class="blog-details pt-130 pb-130">
+<section class="blog-details pb-130">
   <style>
     .blog-details-content p,
     .blog-details-content li {
@@ -126,8 +126,12 @@
                         <div class="tag-left">
                             <ul class="tag-list">
                                 {% for tag in tags %}
-                                    <li><a href="#">{{ tag }}</a></li>
-                                {% endfor %}
+                                {% if loop.index > 2 %}
+                                  <li><a href="#">{{ tag }}</a></li>
+                                {% endif %}
+                              {% endfor %}
+                              
+                              
                             </ul>
                         </div>
                         <div class="social-list-wrap">
@@ -142,10 +146,10 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="next-prev-wrap">
+                    <!--div class="next-prev-wrap">
                         <h4 class="post-btn"><a href="#"><span class="icon"><i class="fa-regular fa-chevron-left"></i></span>Previous post</a></h4>
                         <h4 class="post-btn"><a href="#">Next post <span class="icon"><i class="fa-regular fa-chevron-right"></i></span></a></h4>
-                    </div>
+                    </div-->
                 </div>
             </div>
         </div>
@@ -161,28 +165,18 @@
         </div>
         <div class="row gy-lg-0 gy-4">
             <div class="col-lg-6">
+                {% for post in collections.portfolio %}
                 <div class="cs-item">
                     <div class="cs-thumb">
-                        <img src="/assets/images/images/cs-img-1.png" alt="img">
+                        <img src="{{ post.data.image }}" alt="img">
                         <a class="cs-btn" href="#"><i class="fa-light fa-arrow-right-long"></i></a>
                     </div>
                     <div class="cs-content">
-                        <span class="number">01</span>
-                        <h3 class="title"><a href="#">Medical Application Design</a></h3>
+                        <span class="number">{{ loop.index | string | pad(2, '0') }}</span>
+                        <h3 class="title"><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="cs-item">
-                    <div class="cs-thumb">
-                        <img src="/assets/images/images/cs-img-2.png" alt="img">
-                        <a class="cs-btn" href="#"><i class="fa-light fa-arrow-right-long"></i></a>
-                    </div>
-                    <div class="cs-content">
-                        <span class="number">02</span>
-                        <h3 class="title"><a href="#">Dashboard App Design</a></h3>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </div>
