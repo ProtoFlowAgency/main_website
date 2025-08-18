@@ -10,44 +10,18 @@ industry: Accounting
 date: 2025-08-17T23:00:00.000+10:00
 author: Alan Huynh
 sub_title: Payroll Automation System
-description: Lorem ipsum dolor sit amet consectetur adipiscing, elit nunc
-  eleifend duis sociosqu augue imperdiet, metus varius at dignissim malesuada.
-  Nisi pharetra felis ullamcorper diam rutrum justo lectus ligula aptent,
-  dapibus egestas habitasse habitant velit platea eget penatibus facilisi fusce,
-  dictumst torquent sagittis porttitor nunc orci posuere praesent. Penatibus
-  tincidunt erat odio augue sed platea, dapibus mauris hendrerit felis morbi
-  duis, ornare lacinia sodales convallis sollicitudin. Sociosqu pulvinar tempus
-  vel laoreet interdum porttitor commodo, vivamus congue sagittis aenean turpis
-  nullam diam, bibendum habitant nam non varius orci. Accumsan dui id justo
-  fusce vehicula inceptos dignissim potenti elementum iaculis, nibh suspendisse
-  ultricies nisl aptent sodales vitae eros vulputate. Gravida sollicitudin
-  bibendum nascetur facilisis platea feugiat parturient mauris, erat habitant
-  metus conubia lobortis tempor elementum augue, tempus taciti convallis aptent
-  ridiculus primis neque.
+description: A proof-of-concept automation that showed how payroll teams can cut contract processing times by two-thirds, while improving accuracy and compliance.
 tags:
-  - chatbot
+  - automation
+  - ai
 details_title_1: 01. The Challenge
-details_content_1: Turpis odio nascetur vel suscipit proin vestibulum bibendum
-  tempor. Curabitur aliquam sociis risus parturient faucibus ornare magnis
-  nascetur mauris, bibendum convallis vestibulum purus tincidunt eleifend
-  litora. Leo magnis egestas conubia fringilla justo platea pharetra cubilia
-  phasellus hac tristique proin, eget nascetur fermentum lacus mi arcu habitant
-  facilisis odio eleifend vitae. Dignissim nostra hendrerit suscipit platea
-  condimentum suspendisse montes porttitor, commodo potenti laoreet dictumst
-  rutrum senectus luctus nulla.
+details_content_1: Payroll teams were drowning in employment contracts. Dozens of formats, edge cases, and long review cycles meant it could take months to process new agreements. Every contract had to be handled by hand, leaving plenty of room for mistakes and slowing down the whole operation.
 details_title_2: 02. The Solution
-details_content_2: Turpis odio nascetur vel suscipit proin vestibulum bibendum
-  tempor. Curabitur aliquam sociis risus parturient faucibus ornare magnis
-  nascetur mauris, bibendum convallis vestibulum purus tincidunt eleifend
-  litora. Leo magnis egestas conubia fringilla justo platea pharetra cubilia
-  phasellus hac tristique proin, eget nascetur fermentum lacus mi arcu habitant
-  facilisis odio eleifend vitae. Dignissim nostra hendrerit suscipit platea
-  condimentum suspendisse montes porttitor, commodo potenti laoreet dictumst
-  rutrum senectus luctus nulla.
-blockquote: "Primis inceptos phasellus commodo conubia blandit neque quis, mi suspendisse vivamus cum dapibus"
-blockquote_author: Alan Huynh
+details_content_2: We built a proof-of-concept system that could automatically read and parse contracts into a structured format. Instead of re-reading every page, staff could see the important details at a glance, validate quickly, and move on. The POC used safe, public sample data to prove the approach before touching any real files.
+blockquote: "You can throw AI at anything and it will work, but a reliable automation isn’t about hype, it’s about making the messy parts simple and repeatable."
+blockquote_author: Alan
 details_title_3: 03. The Result
-details_content_3: "Primis inceptos phasellus commodo conubia blandit neque quis, mi suspendisse vivamus cum dapibus"
+details_content_3: "The POC showed strong potential: contract processing times could be cut by roughly two-thirds, with fewer errors and clearer audit trails. Even at this early stage, the team saw how much faster and more reliable their workflows could be once automated. Full rollout discussions are now on the table."
 image_1: /assets/images/blog/blog-details-img-1.png
 image_2: /assets/images/blog/blog-details-img-1.png
 image_3: /assets/images/blog/blog-details-img-1.png

@@ -1,8 +1,8 @@
 ---
 title: CyLynk Chatbot Development
 url: cylynkgpt
-image: /assets/images/blog/blog-details-img.png
-imageAlt: placeholder
+image: /assets/images/portfolio/cylynk_mock_up.jpg
+imageAlt: LynkGPT Chatbot
 client_name: CyLynk
 category:
   - Chatbot
@@ -10,45 +10,19 @@ industry: EdTech
 date: 2025-08-17T23:00:00.000+10:00
 author: Alan Huynh
 sub_title: CyLynk Chatbot Development
-description: Lorem ipsum dolor sit amet consectetur adipiscing, elit nunc
-  eleifend duis sociosqu augue imperdiet, metus varius at dignissim malesuada.
-  Nisi pharetra felis ullamcorper diam rutrum justo lectus ligula aptent,
-  dapibus egestas habitasse habitant velit platea eget penatibus facilisi fusce,
-  dictumst torquent sagittis porttitor nunc orci posuere praesent. Penatibus
-  tincidunt erat odio augue sed platea, dapibus mauris hendrerit felis morbi
-  duis, ornare lacinia sodales convallis sollicitudin. Sociosqu pulvinar tempus
-  vel laoreet interdum porttitor commodo, vivamus congue sagittis aenean turpis
-  nullam diam, bibendum habitant nam non varius orci. Accumsan dui id justo
-  fusce vehicula inceptos dignissim potenti elementum iaculis, nibh suspendisse
-  ultricies nisl aptent sodales vitae eros vulputate. Gravida sollicitudin
-  bibendum nascetur facilisis platea feugiat parturient mauris, erat habitant
-  metus conubia lobortis tempor elementum augue, tempus taciti convallis aptent
-  ridiculus primis neque.
+description: A conversational AI chatbot built into CyLynk’s LMS to help students quickly access resources, FAQs, and cybersecurity training guidance.
 tags:
   - chatbot
+  - ai
 details_title_1: 01. The Challenge
-details_content_1: Turpis odio nascetur vel suscipit proin vestibulum bibendum
-  tempor. Curabitur aliquam sociis risus parturient faucibus ornare magnis
-  nascetur mauris, bibendum convallis vestibulum purus tincidunt eleifend
-  litora. Leo magnis egestas conubia fringilla justo platea pharetra cubilia
-  phasellus hac tristique proin, eget nascetur fermentum lacus mi arcu habitant
-  facilisis odio eleifend vitae. Dignissim nostra hendrerit suscipit platea
-  condimentum suspendisse montes porttitor, commodo potenti laoreet dictumst
-  rutrum senectus luctus nulla.
+details_content_1: "Students on CyLynk’s platform were spending too much time searching for content and waiting on repetitive support responses. In a fast-moving subject like cybersecurity, this slowed learning and created extra workload for instructors."
 details_title_2: 02. The Solution
-details_content_2: Turpis odio nascetur vel suscipit proin vestibulum bibendum
-  tempor. Curabitur aliquam sociis risus parturient faucibus ornare magnis
-  nascetur mauris, bibendum convallis vestibulum purus tincidunt eleifend
-  litora. Leo magnis egestas conubia fringilla justo platea pharetra cubilia
-  phasellus hac tristique proin, eget nascetur fermentum lacus mi arcu habitant
-  facilisis odio eleifend vitae. Dignissim nostra hendrerit suscipit platea
-  condimentum suspendisse montes porttitor, commodo potenti laoreet dictumst
-  rutrum senectus luctus nulla.
-blockquote: "Primis inceptos phasellus commodo conubia blandit neque quis, mi suspendisse vivamus cum dapibus"
-blockquote_author: Alan Huynh
+details_content_2: "I built an AI-powered chatbot directly inside their LMS. It can answer student questions instantly, point learners to the right modules and labs, and support natural, conversational interactions. The system is lightweight, easy to maintain, and designed to scale as CyLynk adds new features."
+blockquote: "Reliability was our top priority, the chatbot had to work inside the LMS every single time, no matter the load."
+blockquote_author: Alan
 details_title_3: 03. The Result
-details_content_3: "Primis inceptos phasellus commodo conubia blandit neque quis, mi suspendisse vivamus cum dapibus"
-image_1: /assets/images/blog/blog-details-img-1.png
-image_2: /assets/images/blog/blog-details-img-1.png
-image_3: /assets/images/blog/blog-details-img-1.png
+details_content_3: "The chatbot is in final delivery, with early testing showing clear benefits: faster student support, reduced admin load for instructors, stronger student engagement, and a scalable foundation for future AI features."
+image_1: /assets/images/portfolio/cylynk_flow.jpg
+image_2: /assets/images/portfolio/cylynk_mock_up.jpg
+image_3: /assets/images/portfolio/cylynk_result.jpg
 ---
