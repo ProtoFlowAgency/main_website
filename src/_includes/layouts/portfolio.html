@@ -164,20 +164,20 @@
             <h2 class="section-title" data-text-animation data-split="word" data-duration="1">Check Related Projects</h2>
         </div>
         <div class="row gy-lg-0 gy-4">
+            {% for post in collections.portfolio %}
             <div class="col-lg-6">
-                {% for post in collections.portfolio %}
                 <div class="cs-item">
                     <div class="cs-thumb">
                         <img src="{{ post.data.image }}" alt="img">
                         <a class="cs-btn" href="#"><i class="fa-light fa-arrow-right-long"></i></a>
                     </div>
                     <div class="cs-content">
-                        <span class="number">{{ loop.index | string | pad(2, '0') }}</span>
+                        <span class="number">{% if loop.index < 10 %}0{{ loop.index }}{% else %}{{ loop.index }}{% endif %}</span>
                         <h3 class="title"><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
                     </div>
                 </div>
-                {% endfor %}
             </div>
+            {% endfor %}
         </div>
     </div>
 <!-- ./ case-study -->
