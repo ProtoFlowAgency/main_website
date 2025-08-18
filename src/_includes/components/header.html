@@ -13,14 +13,13 @@
             <a href="tel:+61486010043"> {{ client.phoneFormatted }} </a>
           </li>
           <li>
-            <i class="fa-sharp fa-solid fa-location-dot"></i> {{ client.address.lineOne }}, {{ client.address.lineTwo }}, {{ client.address.city }}, {{ client.address.state }}, {{ client.address.zip }}
+            <i class="fa-sharp fa-solid fa-location-dot"></i> {{ client.address.lineOne }}, {{ client.address.lineTwo
+            }}, {{ client.address.city }}, {{ client.address.state }}, {{ client.address.zip }}
             VIC
           </li>
           <li>
             <i class="fa-sharp fa-regular fa-envelope"></i>
-            <a href="mailto:{{ client.email }}"
-              >{{ client.email }}</a
-            >
+            <a href="mailto:{{ client.email }}">{{ client.email }}</a>
           </li>
         </ul>
         <div class="top-bar-right">
@@ -48,16 +47,8 @@
       <div class="primary-header-inner">
         <div class="header-logo">
           <a href="/">
-            <img
-              class="logo-dark"
-              src="/assets/images/logo-white.png"
-              alt="{{ client.name }} Logo"
-            />
-            <img
-              class="logo-light"
-              src="/assets/images/logo-white.png"
-                alt="{{ client.name }} Logo"
-            />
+            <img class="logo-dark" src="/assets/images/logo-white.png" alt="{{ client.name }} Logo" />
+            <img class="logo-light" src="/assets/images/logo-white.png" alt="{{ client.name }} Logo" />
           </a>
         </div>
         <div class="header-menu-wrap">
@@ -116,8 +107,7 @@
         <div class="header-right-wrap">
           <div class="header-right">
             <div class="header-btn-wrap">
-              <a href="/contact" class="rr-primary-btn"
-                >Get in touch <i class="fa-sharp fa-regular fa-arrow-right"></i>
+              <a href="/contact" class="rr-primary-btn">Get in touch <i class="fa-sharp fa-regular fa-arrow-right"></i>
               </a>
             </div>
             <div class="sidebar-icon">
@@ -140,12 +130,7 @@
 <div id="popup-search-box">
   <div class="box-inner-wrap d-flex align-items-center">
     <form id="form" action="#" method="get" role="search">
-      <input
-        id="popup-search"
-        type="text"
-        name="s"
-        placeholder="Type keywords here..."
-      />
+      <input id="popup-search" type="text" name="s" placeholder="Type keywords here..." />
     </form>
     <div class="search-close">
       <i class="fa-sharp fa-regular fa-xmark"></i>
@@ -157,9 +142,7 @@
 <div class="mobile-side-menu">
   <div class="side-menu-content">
     <div class="side-menu-head">
-      <a href="/"
-        ><img src="/assets/images/logo-white.png" alt="{{ client.name }} Logo"
-      /></a>
+      <a href="/"><img src="/assets/images/logo-white.png" alt="{{ client.name }} Logo" /></a>
       <button class="mobile-side-menu-close">
         <i class="fa-regular fa-xmark"></i>
       </button>
@@ -168,7 +151,8 @@
     <ul class="side-menu-list">
       <li>
         <i class="fa-light fa-location-dot"></i>Address :
-        <span>{{ client.address.lineOne }}, {{ client.address.lineTwo }}, {{ client.address.city }}, {{ client.address.state }}, {{ client.address.zip }}</span>
+        <span>{{ client.address.lineOne }}, {{ client.address.lineTwo }}, {{ client.address.city }}, {{
+          client.address.state }}, {{ client.address.zip }}</span>
       </li>
       <li>
         <i class="fa-light fa-phone"></i>Phone :
@@ -176,9 +160,7 @@
       </li>
       <li>
         <i class="fa-light fa-envelope"></i>Email :
-        <a href="mailto:{{ client.email }}"
-          >{{ client.email }}</a
-        >
+        <a href="mailto:{{ client.email }}">{{ client.email }}</a>
       </li>
     </ul>
   </div>
@@ -188,44 +170,21 @@
 
 <div id="sidebar-area" class="sidebar-area">
   <button class="sidebar-trigger close">
-    <svg
-      class="sidebar-close"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      x="0px"
-      y="0px"
-      width="16px"
-      height="12.7px"
-      viewBox="0 0 16 12.7"
-      style="enable-background: new 0 0 16 12.7"
-      xml:space="preserve"
-    >
+    <svg class="sidebar-close" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+      y="0px" width="16px" height="12.7px" viewBox="0 0 16 12.7" style="enable-background: new 0 0 16 12.7"
+      xml:space="preserve">
       <g>
-        <rect
-          x="0"
-          y="5.4"
-          transform="matrix(0.7071 -0.7071 0.7071 0.7071 -2.1569 7.5208)"
-          width="16"
-          height="2"
-        ></rect>
-        <rect
-          x="0"
-          y="5.4"
-          transform="matrix(0.7071 0.7071 -0.7071 0.7071 6.8431 -3.7929)"
-          width="16"
-          height="2"
-        ></rect>
+        <rect x="0" y="5.4" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -2.1569 7.5208)" width="16" height="2">
+        </rect>
+        <rect x="0" y="5.4" transform="matrix(0.7071 0.7071 -0.7071 0.7071 6.8431 -3.7929)" width="16" height="2">
+        </rect>
       </g>
     </svg>
   </button>
   <div class="side-menu-content">
     <div class="side-menu-logo">
-      <a class="dark-img" href="/"
-        ><img src="/assets/images/logo-white.png" alt="north melbourne web logo"
-      /></a>
-      <a class="light-img" href="/"
-        ><img src="/assets/images/logo-black.png" alt="north melbourne web logo"
-      /></a>
+      <a class="dark-img" href="/"><img src="/assets/images/logo-white.png" alt="north melbourne web logo" /></a>
+      <a class="light-img" href="/"><img src="/assets/images/logo-black.png" alt="north melbourne web logo" /></a>
     </div>
     <div class="side-menu-wrap"></div>
     <div class="side-menu-about">
@@ -233,9 +192,8 @@
         <h3>About Us</h3>
       </div>
       <p>
-        Professional Web Design & Development for Small Businesses Get a custom,
-        hand-coded website starting at just A$199/month. No page builders or
-        WordPress - just clean, professional design.
+        We help small and mid-sized businesses replace manual workflows with reliable, compliant systems.
+        Built fast, delivered clearly, and designed to pay for themselves.
       </p>
       <a href="/contact" class="rr-primary-btn">Contact Us</a>
     </div>
@@ -246,7 +204,8 @@
       <ul class="side-menu-list">
         <li>
           <i class="fas fa-map-marker-alt"></i>
-          <p>{{ client.address.lineOne }}, {{ client.address.lineTwo }}, {{ client.address.city }}, {{ client.address.state }}, {{ client.address.zip }}</p>
+          <p>{{ client.address.lineOne }}, {{ client.address.lineTwo }}, {{ client.address.city }}, {{
+            client.address.state }}, {{ client.address.zip }}</p>
         </li>
         <li>
           <i class="fas fa-phone"></i>
@@ -254,9 +213,7 @@
         </li>
         <li>
           <i class="fas fa-envelope-open-text"></i>
-          <a href="mailto:{{ client.email }}"
-            >{{ client.email }}</a
-          >
+          <a href="mailto:{{ client.email }}">{{ client.email }}</a>
         </li>
       </ul>
     </div>
