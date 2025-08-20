@@ -1,7 +1,7 @@
 ---
 title: Payroll Automation System
 url: automated_payroll
-image: /assets/images/blog/blog-details-img.png
+image: /assets/images/portfolio/payroll_design.jpg
 imageAlt: placeholder
 client_name: Redacted
 category:
@@ -22,7 +22,7 @@ blockquote: "You can throw AI at anything and it will work, but a reliable autom
 blockquote_author: Alan
 details_title_3: 03. The Result
 details_content_3: "The POC showed strong potential: contract processing times could be cut by roughly two-thirds, with fewer errors and clearer audit trails. Even at this early stage, the team saw how much faster and more reliable their workflows could be once automated. Full rollout discussions are now on the table."
-image_1: /assets/images/blog/blog-details-img-1.png
-image_2: /assets/images/blog/blog-details-img-1.png
-image_3: /assets/images/blog/blog-details-img-1.png
+image_1: /assets/images/portfolio/payroll_design.jpg
+image_2: /assets/images/portfolio/payroll_mock_health.png
+image_3: /assets/images/portfolio/payroll_result.jpg
 ---
