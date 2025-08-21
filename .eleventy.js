@@ -78,6 +78,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./src/assets");
     eleventyConfig.addPassthroughCopy("./src/admin");
     eleventyConfig.addPassthroughCopy("./src/_redirects");
+    eleventyConfig.addPassthroughCopy("./src/googlecfebd9c8f1140b47.html");
     /**=====================================================================
                               END PASSTHROUGHS
     =======================================================================*/
