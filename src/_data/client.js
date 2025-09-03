@@ -1,6 +1,6 @@
 module.exports = {
     "name": "ProtoFlow",
-    "email": "alan@protoflow.com.au",
+    "email": "alan@protoflow.au",
     "phoneForTel": "0486-010-043",
     "phoneFormatted": "+61 (0) 486 010 043",
     "address": {
