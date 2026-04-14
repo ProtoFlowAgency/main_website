@@ -6,10 +6,11 @@ START: Header CSS
 
 // Header //
 .header {
-    background-color: transparent;
+    background-color: #0d0f14;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
     width: 100%;
     position: fixed;
-    top: 55px;
+    top: 0;
     left: 0;
     width: 100%;
     z-index: 99;
@@ -77,7 +78,7 @@ START: Header CSS
                     }
                     a {
                         font-family: "Hind Madurai", sans-serif;
-                        color: var(--rr-color-common-white);
+                        color: rgba(255, 255, 255, 0.85);
                         display: block;
                         font-size: 14px;
                         padding: 35px 0;
@@ -287,7 +288,7 @@ START: Header CSS
                     height: 80px;
                     width: 80px;
                     border-radius: 50%;
-                    border: 1px solid var(--rr-color-common-white);
+                    border: 1px solid rgba(0, 0, 0, 0.12);
                     @include flex-center;
                     @include transition(all 0.3s ease-in-out);
                     @include breakpoint(md){
@@ -615,71 +616,90 @@ START: Header CSS
         z-index: -1;
     }
     .top-bar{
-        border-bottom: 1px solid var(--rr-color-border-1);
-        @include breakpoint(sm){
+        background-color: rgba(0,0,0,0.25);
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+        @include breakpoint(md){
             display: none;
         }
         .top-bar-inner{
             @include flex-vertical-center;
             justify-content: space-between;
-            @include breakpoint(md){
-                justify-content: center;
-            }
+            padding: 7px 0;
             .top-bar-list{
                 @include flex-vertical-center;
                 list-style: none;
-                @include breakpoint(md){
-                    display: none;
-                    justify-content: center;
-                }
+                column-gap: 0;
                 li{
                     @include flex-vertical-center;
-                    column-gap: 10px;
-                    font-size: 14px;
-                    padding: 15px 0;
+                    column-gap: 6px;
+                    font-size: 11px;
+                    font-weight: 400;
+                    color: rgba(255,255,255,0.35);
+                    letter-spacing: 0.02em;
+                    i{
+                        font-size: 10px;
+                        color: rgba(255,255,255,0.25);
+                    }
+                    a{
+                        color: inherit;
+                        text-decoration: none;
+                        transition: color 0.2s ease;
+                        &:hover{
+                            color: rgba(255,255,255,0.65);
+                        }
+                    }
                     &:not(:last-of-type){
                         margin-right: 18px;
                         padding-right: 18px;
-                        border-right: 1px solid var(--rr-color-border-1);
+                        position: relative;
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            right: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            height: 10px;
+                            width: 1px;
+                            background: rgba(255,255,255,0.08);
+                        }
                     }
                 }
             }
             .top-bar-right{
                 @include flex-vertical-center;
-                .top-right-list{
-                    @include flex-vertical-center;
-                    list-style: none;
-                    padding: 15px 0;
-                    margin-right: 13px;
-                    padding-right: 13px;
-                    border-right: 1px solid var(--rr-color-border-1);
-                    li{
-                        font-size: 14px;
-                        position: relative;
-                        &:not(:last-of-type){
-                            padding-right: 15px;
-                            margin-right: 10px;
-                            &:before{
-                                content: "/";
-                                position: absolute;
-                                top: 0;
-                                right: 0;
-                            }
-                        }
-                    }
-                }
+                column-gap: 12px;
                 .top-bar-social{
                     @include flex-vertical-center;
+                    column-gap: 7px;
                     span{
-                        font-size: 14px;
-                        margin-right: 15px;
+                        font-size: 10px;
+                        font-weight: 400;
+                        color: rgba(255,255,255,0.20);
+                        text-transform: uppercase;
+                        letter-spacing: 0.1em;
                     }
                     .social-list{
+                        @include flex-vertical-center;
+                        list-style: none;
+                        column-gap: 5px;
                         li{
-                            display: inline-flex;
-                            font-size: 14px;
-                            &:not(:last-of-type){
-                                margin-right: 10px;
+                            a{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 22px;
+                                height: 22px;
+                                border-radius: 50%;
+                                border: 1px solid rgba(255,255,255,0.10);
+                                color: rgba(255,255,255,0.30);
+                                font-size: 10px;
+                                text-decoration: none;
+                                transition: all 0.2s ease;
+                                &:hover{
+                                    background: var(--rr-color-theme-primary);
+                                    border-color: var(--rr-color-theme-primary);
+                                    color: #fff;
+                                }
                             }
                         }
                     }
@@ -756,26 +776,19 @@ START: Header CSS
 .header-6{
     top: 0;
     position: fixed;
+    background-color: #0d0f14;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
     @include breakpoint(md){
         position: relative;
     }
     .bg-shape{
-        background: rgba(0, 0, 0, 0.25);
-        backdrop-filter: blur(8px);
-        height: 69.5%;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        @include breakpoint(md){
-            display: none;
-        }
+        display: none;
     }
     &.fixed{
-        background-color: transparent;
+        background-color: #0d0f14;
         transform: translateY(-70px);
         border: none;
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.30), 0 1px 4px rgba(0, 0, 0, 0.15);
         .bg-shape{
             display: none;
         }
@@ -792,7 +805,7 @@ START: Header CSS
                 @include flex-vertical-center;
                 li{
                     font-family: var(--rr-ff-body);
-                    color: var(--rr-color-common-white);
+                    color: rgba(255, 255, 255, 0.7);
                     font-size: 16px;
                     font-weight: 500;
                     @include flex-vertical-center;
@@ -804,7 +817,7 @@ START: Header CSS
                     &:not(:last-of-type){
                         margin-right: 20px;
                         padding-right: 20px;
-                        border-right: 1px solid rgba(255, 255, 255, 0.2);
+                        border-right: 1px solid rgba(255, 255, 255, 0.10);
                     }
                 }
             }
@@ -813,11 +826,11 @@ START: Header CSS
                     @include flex-vertical-center;
                     column-gap: 20px;
                     span{
-                        color: var(--rr-color-common-white);
+                        color: rgba(255, 255, 255, 0.7);
                     }
                     .social-list{
                         li{
-                            color: var(--rr-color-common-white);
+                            color: rgba(255, 255, 255, 0.7);
                             display: inline-flex;
                             align-items: center;
                             &:not(:last-of-type){
@@ -831,30 +844,19 @@ START: Header CSS
     }
     .primary-header{
         .primary-header-inner{
-            background-color: var(--rr-color-bg-1);
+            background-color: transparent;
             padding: 0 30px;
-            border-radius: 5px;
+            border-radius: 0;
             position: relative;
             z-index: 1;
+            .header-logo{
+                display: block !important;
+            }
             @include breakpoint(md){
                 background: transparent;
             }
             &:before{
-                background-color: var(--rr-color-theme-primary);
-                content: "";
-                width: 250px;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index: -1;
-                border-radius: 5px 0 0 5px;
-                @include breakpoint(lg){
-                    width: 210px;
-                }
-                @include breakpoint(md){
-                    display: none;
-                }
+                display: none;
             }
             @include breakpoint(md){
                 padding: 0px 0;
@@ -884,31 +886,13 @@ START: Header CSS
             }
             .header-right{
                 .header-btn-wrap{
-                    @include breakpoint(lg){
-                        display: none;
-                    }
                     .rr-primary-btn{
-                        padding: 17px 30px;
-                        border-radius: 5px;
+                        padding: 14px 28px;
+                        border-radius: 6px;
                     }
                 }
                 .sidebar-trigger{
-                    flex-direction: column;
-                    @include flex-center;
-                    margin-left: 20px;
-                    height: 50px;
-                    width: 50px;
-                    border-radius: 5px;
-                    span{
-                        background-color: var(--rr-color-common-white);
-                        width: 22px;
-                        height: 3px;
-                        border-radius: 100px;
-                        display: block;
-                        &:not(:last-of-type){
-                            margin-bottom: 5px;
-                        }
-                    }
+                    display: none !important;
                 }
             }
         }

@@ -1,30 +1,30 @@
 $colors: (
     "common": (
         "white": #ffffff,
-        "black": #08090A,
-        "dark": #393a3b,
+        "black": #0d0d0d,
+        "dark": #333333,
     ),
     "heading": (
-        "primary": #08090A,
+        "primary": #0d0d0d,
     ),
     "text": (
-        "body": #6b6b6c,
-        "body-light": #393a3b,
+        "body": #555555,
+        "body-light": #333333,
     ),
     "theme": (
-        "primary": #7070FF,
-        "secondary": #a9a9ff,
+        "primary": #3F5AF3,
+        "secondary": #1e32b8,
     ),
     "bg": (
-        "1": #08090A,
+        "1": #ffffff,
     ),
     "grey": (
-        "1": #ffffff,
-        "2": #393a3b,
-        "light": #e6e6e7,
+        "1": #fafafa,
+        "2": #f5f5f5,
+        "light": #eeeeee,
     ),
     "border": (
-        "1": #393a3b,
-        "light": #cecece,
+        "1": rgba(0, 0, 0, 0.08),
+        "light": rgba(0, 0, 0, 0.07),
     ),
 );

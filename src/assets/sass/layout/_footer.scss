@@ -6,6 +6,8 @@ START: Footer CSS
 .footer-section {
     position: relative;
     z-index: 1;
+    background-color: var(--rr-color-grey-1);
+    border-top: 1px solid var(--rr-color-border-light);
     .shape{
         position: absolute;
         top: 0;
@@ -34,7 +36,7 @@ START: Footer CSS
             max-width: 170px;
         }
         .widget-title{
-            color: var(--rr-color-common-white);
+            color: var(--rr-color-heading-primary);
             font-size: 24px;
             font-weight: 700;
             position: relative;
@@ -55,6 +57,7 @@ START: Footer CSS
         margin-bottom: 0;
         margin-top: 30px;
         text-transform: uppercase;
+        color: var(--rr-color-heading-primary);
         span{
             color: var(--rr-color-text-body);
             display: block;
@@ -66,10 +69,10 @@ START: Footer CSS
     .footer-list {
         list-style: none;
         li {
-            color: rgba(255, 255, 255, 0.8);
+            color: var(--rr-color-text-body);
             a {
                 font-family: var(--rr-ff-body);
-                color: rgba(255, 255, 255, 0.8);
+                color: var(--rr-color-text-body);
                 font-size: 16px;
                 font-weight: 400;
                 line-height: 1;
@@ -86,19 +89,19 @@ START: Footer CSS
         position: relative;
         margin-top: 30px;
         .form-control{
-            background-color: var(--rr-color-border-1);
+            background-color: var(--rr-color-grey-2);
             padding: 15px 104px 15px 15px;
-            color: rgba(255, 255, 255, 0.8);
+            color: var(--rr-color-heading-primary);
             box-shadow: none;
-            border: none;
+            border: 1px solid var(--rr-color-border-1);
             border-radius: 4px;
                 @include tp-placeholder{
-                color: rgba(255, 255, 255, 0.8);
+                color: var(--rr-color-text-body);
             }
         }
         .submit{
             background-color: var(--rr-color-theme-primary);
-            color: rgba(255, 255, 255, 0.8);
+            color: #ffffff;
             position: absolute;
             top: 50%;
             right: 0;
@@ -116,7 +119,7 @@ START: Footer CSS
         li {
             font-family: var(--rr-ff-body);
             font-size: 16px;
-            color: rgba(255, 255, 255, 0.8);
+            color: var(--rr-color-text-body);
             display: flex;
             column-gap: 10px;
             &:not(:last-of-type) {
@@ -128,6 +131,7 @@ START: Footer CSS
                 margin-top: 6px;
             }
             a {
+                color: var(--rr-color-text-body);
                 border-bottom: 1px solid transparent;
                 &:hover {
                     color: var(--rr-color-theme-primary);
@@ -142,17 +146,18 @@ START: Footer CSS
         li {
             a {
                 background-color: transparent;
-                color: var(--rr-color-common-white);
+                color: var(--rr-color-heading-primary);
                 font-size: 14px;
                 height: 40px;
                 width: 40px;
                 border-radius: 0;
                 display: block;
-                border: 1px solid rgba(255, 255, 255, 0.2);
+                border: 1px solid var(--rr-color-border-1);
                 @include flex-center;
                 &:hover {
                     background-color: var(--rr-color-theme-primary);
-                    color: var(--rr-color-common-white);
+                    color: #ffffff;
+                    border-color: var(--rr-color-theme-primary);
                 }
             }
             &:not(:last-of-type) {
@@ -163,8 +168,8 @@ START: Footer CSS
     .form-check{
         margin-top: 30px;
         .form-check-input{
-            background-color: var(--rr-color-border-1);
-            border: none;
+            background-color: var(--rr-color-grey-2);
+            border: 1px solid var(--rr-color-border-1);
             box-shadow: none;
             height: 17px;
             width: 17px;
@@ -176,6 +181,7 @@ START: Footer CSS
             font-size: 14px;
             font-weight: 400;
             cursor: pointer;
+            color: var(--rr-color-text-body);
         }
     }
     &.footer-col-2{
@@ -205,7 +211,7 @@ START: Footer CSS
                     &:hover{
                         &:before{
                             color: var(--rr-color-theme-primary);
-                            left: 5px; 
+                            left: 5px;
                         }
                     }
                 }
@@ -222,7 +228,7 @@ START: Footer CSS
 
 
 .copyright-area{
-    border-top: 1px solid var(--rr-color-border-1);
+    border-top: 1px solid var(--rr-color-border-light);
     padding: 40px 0;
     @include breakpoint(md){
         padding: 40px 0
@@ -238,7 +244,7 @@ START: Footer CSS
         row-gap: 20px;
     }
     p {
-        color: rgba(255, 255, 255, 0.8);
+        color: var(--rr-color-text-body);
         font-size: 16px;
         font-family: var(--rr-ff-body);
         margin: 0;
@@ -258,8 +264,8 @@ START: Footer CSS
         }
         li {
             a {
-                background-color: var(--rr-color-border-1);
-                color: var(--rr-color-common-white);
+                background-color: var(--rr-color-grey-2);
+                color: var(--rr-color-heading-primary);
                 font-size: 13px;
                 height: 40px;
                 width: 40px;
@@ -268,7 +274,7 @@ START: Footer CSS
                 @include flex-center;
                 &:hover {
                     background-color: var(--rr-color-theme-primary);
-                    color: var(--rr-color-common-white);
+                    color: #ffffff;
                 }
             }
             &:not(:last-of-type) {
@@ -287,7 +293,7 @@ START: Footer CSS
     row-gap: 20px;
     padding: 100px 0 60px 0;
     margin-bottom: 80px;
-    border-bottom: 1px solid var(--rr-color-border-1);
+    border-bottom: 1px solid var(--rr-color-border-light);
     @include breakpoint(sm){
         padding: 50px 0;
         margin-bottom: 50px;
@@ -297,8 +303,8 @@ START: Footer CSS
         list-style: none;
         li {
             a {
-                background-color: var(--rr-color-border-1);
-                color: var(--rr-color-common-white);
+                background-color: var(--rr-color-grey-2);
+                color: var(--rr-color-heading-primary);
                 font-size: 13px;
                 height: 40px;
                 width: 40px;
@@ -307,7 +313,7 @@ START: Footer CSS
                 @include flex-center;
                 &:hover {
                     background-color: var(--rr-color-theme-primary);
-                    color: var(--rr-color-common-white);
+                    color: #ffffff;
                 }
             }
             &:not(:last-of-type) {
@@ -327,7 +333,7 @@ START: Footer CSS
     }
     .copyright-content{
         p{
-            color: var(--rr-color-common-white);
+            color: var(--rr-color-text-body);
             margin-bottom: 0;
             @include breakpoint(md){
                 text-align: center;
@@ -354,7 +360,7 @@ START: Footer CSS
                     }
                     &:before{
                         content: "|";
-                        color: var(--rr-color-common-white);
+                        color: var(--rr-color-text-body);
                         position: absolute;
                         right: 0;
                         top: 50%;
@@ -365,7 +371,7 @@ START: Footer CSS
                     }
                 }
                 a{
-                    color: var(--rr-color-common-white);
+                    color: var(--rr-color-text-body);
                     &:hover{
                         color: var(--rr-color-theme-primary);
                     }
@@ -396,7 +402,7 @@ START: Footer CSS
             }
         }
         .footer-btn{
-            color: var(--rr-color-common-white);
+            color: var(--rr-color-heading-primary);
             font-size: 30px;
             height: 130px;
             width: 130px;
@@ -415,7 +421,7 @@ START: Footer CSS
         }
     }
     .footer-wrap{
-        border-bottom: 1px solid var(--rr-color-border-1);
+        border-bottom: 1px solid var(--rr-color-border-light);
         padding: 30px 0;
         .footer-text-social{
             @include flex-vertical-center;
@@ -436,7 +442,7 @@ START: Footer CSS
                     }
                 }
                 a{
-                    color: var(--rr-color-common-white);
+                    color: var(--rr-color-heading-primary);
                     font-size: 14px;
                     font-weight: 700;
                     letter-spacing: 4px;
@@ -470,7 +476,7 @@ START: Footer CSS
         .social-list{
             li{
                 a{
-                    background-color: #1E2228;
+                    background-color: var(--rr-color-grey-2);
                     border-radius: 50%;
                     border: none;
                     &:hover{

@@ -1,14 +1,14 @@
 module.exports = {
     "name": "ProtoFlow",
-    "email": "alan@protoflow.au",
+    "email": "alan@protoflow.com.au",
     "phoneForTel": "0486-010-043",
-    "phoneFormatted": "+61 (0) 486 010 043",
+    "phoneFormatted": "+61 486 010 043",
     "address": {
-        "lineOne": "Level 22",
-        "lineTwo": "120 Spencer St",
-        "city": "Melbourne",
+        "lineOne": "38 Gipps Street",
+        "lineTwo": "",
+        "city": "Collingwood",
         "state": "VIC",
-        "zip": "3000",
+        "zip": "3066",
         "mapLink": ""
     },
     "socials": {

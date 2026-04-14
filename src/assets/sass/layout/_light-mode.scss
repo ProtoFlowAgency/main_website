@@ -58,9 +58,11 @@
 
 [data-theme="light"] {
     .header{
+        background-color: #ffffff;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.07);
         &.fixed{
-            background-color: var(--rr-color-common-white);
-            border-bottom: 1px solid #efefef;
+            background-color: #ffffff;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.07);
         }
         .primary-header-inner{
             .header-logo{
@@ -1374,9 +1376,14 @@
         border: none;
     }
 
+    .header-6,
     .header-6.fixed{
-        background-color: transparent;
+        background-color: #ffffff;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+    }
+    .header-6.fixed{
         border: none;
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.10), 0 1px 4px rgba(0, 0, 0, 0.06);
     }
 
     .nmw-slider{
@@ -1492,7 +1499,30 @@
     .header-6 .primary-header-inner .header-menu-wrap ul li.menu-item-has-children:after,
     .header-6 .primary-header-inner .header-menu-wrap ul li.active a,
     .header-6 .primary-header-inner .header-menu-wrap ul li a{
-        color: var(--rr-color-common-white);
+        color: var(--rr-color-heading-primary);
+    }
+
+    .header-6 .top-bar{
+        background-color: rgba(0,0,0,0.04);
+        border-bottom-color: rgba(0,0,0,0.06);
+    }
+    .header-6 .top-bar .top-bar-inner .top-bar-list li{
+        color: rgba(0,0,0,0.35);
+        i{ color: rgba(0,0,0,0.25); }
+        a{ color: inherit; &:hover{ color: rgba(0,0,0,0.65); } }
+        &:not(:last-of-type)::after{ background: rgba(0,0,0,0.08); }
+    }
+    .header-6 .top-bar .top-bar-inner .top-bar-right .top-bar-social{
+        span{ color: rgba(0,0,0,0.20); }
+        .social-list li a{
+            color: rgba(0,0,0,0.30);
+            border-color: rgba(0,0,0,0.10);
+            &:hover{
+                background: var(--rr-color-theme-primary);
+                border-color: var(--rr-color-theme-primary);
+                color: #fff;
+            }
+        }
     }
 
     .header-6 .primary-header.fixed .primary-header-inner,

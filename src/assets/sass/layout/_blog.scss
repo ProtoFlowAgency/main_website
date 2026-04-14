@@ -274,11 +274,20 @@ START: Blog CSS
         }
     }
     &.card-3{
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        border-radius: 8px;
+        overflow: hidden;
+        transition: box-shadow 0.2s ease, border-color 0.2s ease;
+        &:hover{
+            border-color: rgba(63, 90, 243, 0.25);
+            box-shadow: 0 4px 20px rgba(63, 90, 243, 0.08);
+        }
         .post-content-wrap{
             position: inherit;
             top: 0;
             left: 0;
             padding: 0;
+            padding: 24px;
             .post-content{
                 .post-meta{
                     li{

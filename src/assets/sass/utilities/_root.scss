@@ -30,3 +30,17 @@
         }
     }
 }
+
+// Dark mode token overrides — applied when no data-theme or data-theme="dark"
+:root:not([data-theme="light"]) {
+    --rr-color-heading-primary: #e8eaf0;
+    --rr-color-text-body: #8b8f9a;
+    --rr-color-text-body-light: #6b6f7a;
+    --rr-color-bg-1: #131519;
+    --rr-color-grey-1: #1a1d23;
+    --rr-color-grey-2: #1e2128;
+    --rr-color-grey-light: #252830;
+    --rr-color-border-1: rgba(255, 255, 255, 0.07);
+    --rr-color-border-light: rgba(255, 255, 255, 0.05);
+    --rr-color-common-black: #e8eaf0;
+}

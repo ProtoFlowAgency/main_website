@@ -7,11 +7,7 @@ START: Sidebar CSS
 #sidebar-overlay,
 .sidebar-trigger,
 .sidebar-area {
-    display: none;
-}
-
-.sidebar-trigger {
-    display: block;
+    display: none !important;
 }
 
 .sidebar-area {
